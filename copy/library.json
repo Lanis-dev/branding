@@ -1,0 +1,290 @@
+{
+  "defaultLocale": "de",
+  "locales": [
+    "de",
+    "en"
+  ],
+  "policy": "New copy and translations are editorial drafts. Source-adapted means derived from current product material, not owner approval.",
+  "items": [
+    {
+      "id": "tagline",
+      "category": "Core",
+      "status": "source-adapted",
+      "reviewNote": "German line from the current Open Graph asset; English is a new translation.",
+      "text": {
+        "de": "Das Schulportal Hessen, neu gedacht.",
+        "en": "Schulportal Hessen, reimagined."
+      }
+    },
+    {
+      "id": "hero",
+      "category": "Website",
+      "status": "draft",
+      "reviewNote": "",
+      "text": {
+        "de": "Dein Schultag. Klar im Blick.",
+        "en": "Your school day, at a glance."
+      }
+    },
+    {
+      "id": "descriptor",
+      "category": "Core",
+      "status": "draft",
+      "reviewNote": "",
+      "text": {
+        "de": "Die moderne, inoffizielle Oberfläche für das Schulportal Hessen.",
+        "en": "A modern, unofficial interface for Schulportal Hessen."
+      }
+    },
+    {
+      "id": "short-description",
+      "category": "Core",
+      "status": "draft",
+      "reviewNote": "",
+      "text": {
+        "de": "Lanis bringt Stundenplan, Hausaufgaben und Nachrichten aus dem Schulportal Hessen in eine übersichtliche Oberfläche.",
+        "en": "Lanis brings your timetable, homework and messages from Schulportal Hessen into one clear interface."
+      }
+    },
+    {
+      "id": "about",
+      "category": "Press",
+      "status": "draft",
+      "reviewNote": "",
+      "text": {
+        "de": "Lanis ist eine unabhängige, inoffizielle Oberfläche für das Schulportal Hessen. Stundenplan, Hausaufgaben und Nachrichten sind übersichtlich erreichbar. Du meldest dich mit deinem bestehenden Schulportal-Konto an. Welche Funktionen verfügbar sind, hängt von deiner Schule und den dort freigeschalteten Modulen ab.",
+        "en": "Lanis is an independent, unofficial interface for Schulportal Hessen. It gives you clear access to your timetable, homework and messages. Sign in with your existing Schulportal account. Available features depend on your school and its enabled modules."
+      }
+    },
+    {
+      "id": "website-intro",
+      "category": "Website",
+      "status": "draft",
+      "reviewNote": "",
+      "text": {
+        "de": "Alles für deinen Schultag an einem Ort: Sieh nach, was als Nächstes ansteht, finde deine Aufgaben und öffne deine Nachrichten. Mit deinem bestehenden Schulportal-Konto.",
+        "en": "Keep your school day in one place: see what is next, find your homework and open your messages. Use your existing Schulportal account."
+      }
+    },
+    {
+      "id": "feature-timetable",
+      "category": "Features",
+      "status": "draft",
+      "reviewNote": "",
+      "text": {
+        "de": "Dein Stundenplan zeigt dir, was heute ansteht. Passende Hausaufgaben siehst du direkt an der Stunde.",
+        "en": "See what is coming up today, with relevant homework right alongside each lesson."
+      }
+    },
+    {
+      "id": "feature-homework",
+      "category": "Features",
+      "status": "draft",
+      "reviewNote": "",
+      "text": {
+        "de": "Aufgaben finden, den Überblick behalten und Erledigtes abhaken.",
+        "en": "Find your homework, keep track of it and tick off completed tasks."
+      }
+    },
+    {
+      "id": "feature-messages",
+      "category": "Features",
+      "status": "draft",
+      "reviewNote": "",
+      "text": {
+        "de": "Deine Schulportal-Nachrichten, übersichtlich und direkt erreichbar.",
+        "en": "Your Schulportal messages, clearly organised and easy to reach."
+      }
+    },
+    {
+      "id": "feature-notifications",
+      "category": "Features",
+      "status": "draft",
+      "reviewNote": "",
+      "text": {
+        "de": "Aktiviere Benachrichtigungen, um über neue Nachrichten und Änderungen am Vertretungsplan informiert zu werden. Verfügbarkeit und Zustellung hängen von Gerät, Berechtigungen und Schule ab.",
+        "en": "Enable notifications for new messages and changes to your substitution plan. Availability and delivery depend on your device, permissions and school."
+      }
+    },
+    {
+      "id": "feature-themes",
+      "category": "Features",
+      "status": "draft",
+      "reviewNote": "",
+      "text": {
+        "de": "Passe Lanis an dich an: mit Farbwahl, Dark Mode und OLED-Modus.",
+        "en": "Make Lanis yours with colour options, dark mode and OLED mode."
+      }
+    },
+    {
+      "id": "cta-start",
+      "category": "Calls to action",
+      "status": "source-adapted",
+      "reviewNote": "",
+      "text": {
+        "de": "Jetzt nutzen",
+        "en": "Open Lanis"
+      }
+    },
+    {
+      "id": "cta-demo",
+      "category": "Calls to action",
+      "status": "source-adapted",
+      "reviewNote": "",
+      "text": {
+        "de": "Demo ansehen",
+        "en": "View demo"
+      }
+    },
+    {
+      "id": "cta-learn",
+      "category": "Calls to action",
+      "status": "draft",
+      "reviewNote": "",
+      "text": {
+        "de": "Lanis kennenlernen",
+        "en": "Discover Lanis"
+      }
+    },
+    {
+      "id": "social-bio",
+      "category": "Social",
+      "status": "draft",
+      "reviewNote": "",
+      "text": {
+        "de": "Stundenplan, Hausaufgaben & Nachrichten. Die inoffizielle Oberfläche für das Schulportal Hessen.",
+        "en": "Timetable, homework & messages. An unofficial interface for Schulportal Hessen."
+      }
+    },
+    {
+      "id": "social-intro",
+      "category": "Social",
+      "status": "draft",
+      "reviewNote": "",
+      "text": {
+        "de": "Dein Schultag, übersichtlich an einem Ort. Entdecke Lanis: die moderne, inoffizielle Oberfläche für das Schulportal Hessen. Mit deinem bestehenden Konto anmelden oder zuerst die Demo ansehen.",
+        "en": "Your school day, clearly organised in one place. Meet Lanis, a modern, unofficial interface for Schulportal Hessen. Sign in with your existing account or explore the demo first."
+      }
+    },
+    {
+      "id": "social-homework",
+      "category": "Social",
+      "status": "draft",
+      "reviewNote": "",
+      "text": {
+        "de": "Was steht morgen an? Mit Lanis findest du deine Hausaufgaben direkt im Stundenplan. Entdecke die Demo und schau dich um.",
+        "en": "What is coming up tomorrow? Find your homework right in your timetable with Lanis. Explore the demo and take a look around."
+      }
+    },
+    {
+      "id": "social-themes",
+      "category": "Social",
+      "status": "draft",
+      "reviewNote": "",
+      "text": {
+        "de": "Dein Schultag. Deine Farben. Gestalte Lanis mit deiner Farbwahl und dem passenden Darstellungsmodus.",
+        "en": "Your school day. Your colours. Personalise Lanis with your colour choice and display mode."
+      }
+    },
+    {
+      "id": "seo-title",
+      "category": "SEO",
+      "status": "draft",
+      "reviewNote": "",
+      "text": {
+        "de": "Lanis | Das Schulportal Hessen, neu gedacht",
+        "en": "Lanis | Schulportal Hessen, reimagined"
+      }
+    },
+    {
+      "id": "seo-description",
+      "category": "SEO",
+      "status": "draft",
+      "reviewNote": "",
+      "text": {
+        "de": "Stundenplan, Hausaufgaben und Nachrichten übersichtlich an einem Ort. Entdecke Lanis, die moderne, inoffizielle Oberfläche für das Schulportal Hessen.",
+        "en": "Your timetable, homework and messages in one clear interface. Discover Lanis, a modern, unofficial way to use Schulportal Hessen."
+      }
+    },
+    {
+      "id": "og-title",
+      "category": "SEO",
+      "status": "draft",
+      "reviewNote": "",
+      "text": {
+        "de": "Dein Schultag. Klar im Blick.",
+        "en": "Your school day, at a glance."
+      }
+    },
+    {
+      "id": "og-description",
+      "category": "SEO",
+      "status": "draft",
+      "reviewNote": "",
+      "text": {
+        "de": "Entdecke die moderne, inoffizielle Oberfläche für das Schulportal Hessen.",
+        "en": "Discover a modern, unofficial interface for Schulportal Hessen."
+      }
+    },
+    {
+      "id": "store-short",
+      "category": "Store draft",
+      "status": "draft",
+      "reviewNote": "",
+      "text": {
+        "de": "Stundenplan, Hausaufgaben und Nachrichten für dein Schulportal Hessen.",
+        "en": "Timetable, homework and messages for your Schulportal Hessen."
+      }
+    },
+    {
+      "id": "store-full",
+      "category": "Store draft",
+      "status": "draft",
+      "reviewNote": "Copy only. Does not assert public store availability or approval.",
+      "text": {
+        "de": "Dein Schulportal im Blick.\n\nLanis bündelt Stundenplan, Hausaufgaben und Nachrichten in einer modernen Oberfläche. Nutze dein bestehendes Schulportal-Konto und gestalte die Darstellung mit deiner Farbwahl und dem passenden Modus.\n\n• Stundenplan und Hausaufgaben zusammen ansehen\n• Schulportal-Nachrichten öffnen\n• Farben und Darstellung anpassen\n\nDu brauchst ein Konto am Schulportal Hessen. Die verfügbaren Funktionen hängen von deiner Schule und ihren Modulen ab. Lanis ist ein unabhängiges, inoffizielles Angebot.",
+        "en": "Keep your school portal in view.\n\nLanis brings your timetable, homework and messages into a modern interface. Use your existing Schulportal account and personalise the colours and display mode.\n\n• View your timetable and homework together\n• Open your Schulportal messages\n• Personalise colours and appearance\n\nYou need a Schulportal Hessen account. Available features depend on your school and its modules. Lanis is an independent, unofficial service."
+      }
+    },
+    {
+      "id": "faq-account",
+      "category": "FAQ",
+      "status": "draft",
+      "reviewNote": "",
+      "text": {
+        "de": "Du nutzt dein bestehendes Konto am Schulportal Hessen. Die Funktionen richten sich nach deiner Schule und den dort verfügbaren Modulen.",
+        "en": "Use your existing Schulportal Hessen account. Features depend on your school and the modules available there."
+      }
+    },
+    {
+      "id": "faq-official",
+      "category": "FAQ",
+      "status": "draft",
+      "reviewNote": "",
+      "text": {
+        "de": "Lanis ist eine unabhängige, inoffizielle Oberfläche für das Schulportal Hessen.",
+        "en": "Lanis is an independent, unofficial interface for Schulportal Hessen."
+      }
+    },
+    {
+      "id": "press-pitch",
+      "category": "Press",
+      "status": "draft",
+      "reviewNote": "",
+      "text": {
+        "de": "Lanis macht den digitalen Schultag übersichtlicher. Die unabhängige Oberfläche für das Schulportal Hessen bringt Stundenplan, Aufgaben und Nachrichten näher zusammen. Einen ersten Eindruck bietet die Demo.",
+        "en": "Lanis makes the digital school day easier to navigate. This independent interface for Schulportal Hessen brings timetables, homework and messages closer together. Explore the demo for a first look."
+      }
+    },
+    {
+      "id": "disclaimer",
+      "category": "Core",
+      "status": "draft",
+      "reviewNote": "",
+      "text": {
+        "de": "Lanis ist ein unabhängiges, inoffizielles Angebot und keine offizielle Anwendung des Schulportals Hessen.",
+        "en": "Lanis is an independent, unofficial service and is not an official Schulportal Hessen application."
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+:root {
+  --lanis-ruby: #f43f5e;
+  --lanis-ruby-ink: #2d0812;
+  --lanis-ruby-text: #be123c;
+  --lanis-ink: #123446;
+  --lanis-paper: #fcfcf9;
+  --lanis-surface: #fafafa;
+  --lanis-muted: #525252;
+  --lanis-white: #ffffff;
+  --lanis-dark: #0a0a0a;
+  --lanis-font-body: 'Outfit', system-ui, sans-serif;
+  --lanis-font-display: 'Syne', sans-serif;
+  --lanis-font-utility: 'JetBrains Mono', monospace;
+}

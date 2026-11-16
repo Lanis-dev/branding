@@ -1,0 +1,26 @@
+{
+  "name": "@lanis-dev/branding",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "LANIS brand assets, reusable copy and an offline asset library",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node --test",
+    "serve": "node scripts/serve.mjs",
+    "render:templates": "node scripts/render-templates.mjs",
+    "test:browser": "node scripts/browser-check.mjs"
+  },
+  "dependencies": {
+    "fflate": "0.8.3",
+    "fontkit": "2.0.4",
+    "sharp": "0.35.5"
+  },
+  "devDependencies": {
+    "puppeteer-core": "25.17.0"
+  }
+}

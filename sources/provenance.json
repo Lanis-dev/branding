@@ -1,0 +1,219 @@
+[
+  {
+    "path": "sources/upstream/opengraph.svg",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/opengraph.svg",
+    "sha256": "5b0783f8beaa794001d5c516eb18dfc3a4d4610f388cf957470adc894c269cc2"
+  },
+  {
+    "path": "sources/upstream/android-chrome-512x512.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/android-chrome-512x512.png",
+    "sha256": "fc0879063950a3ea209fe26ce96a28f2aaf9e2e481cde034e5639cc899ba3b6a"
+  },
+  {
+    "path": "sources/upstream/favicon.ico",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/favicon.ico",
+    "sha256": "c96d308de7d66c40981840e30f0e51865ebee727ec871c00031799da7547158c"
+  },
+  {
+    "path": "sources/upstream/lanis-dashboard.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/landing/lanis-dashboard.png",
+    "sha256": "f6ba5a6a035c20b7473af575da54743df5596823c4e53d5d2c516d2a64291312"
+  },
+  {
+    "path": "sources/upstream/themes.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/landing/themes.png",
+    "sha256": "ffd11badb068e7ad8e6ed9a89bfa4abde041a8b23c3dd9f5972a3f539a5c46da"
+  },
+  {
+    "path": "sources/fonts/README.md",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/README.md",
+    "sha256": "05058b3bc48bce0919463ba033d159409fffed4d8f82f0e33369f03f37147d8f"
+  },
+  {
+    "path": "sources/fonts/fraunces-OFL.txt",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/fraunces-OFL.txt",
+    "sha256": "bdf4c22802eaf804f998195871c6b8938aac2ac14b2d78a8bd66a6f1eced833b"
+  },
+  {
+    "path": "sources/fonts/fraunces-italic-latin-c63fd26c.woff2",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/fraunces-italic-latin-c63fd26c.woff2",
+    "sha256": "d6d7a48008994000fc871bd66d98e247fdb41600edf2ddc1851ce2c6f3678de3"
+  },
+  {
+    "path": "sources/fonts/fraunces-italic-latin-ext-0bead994.woff2",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/fraunces-italic-latin-ext-0bead994.woff2",
+    "sha256": "a4ea6f549b50fbc4d055a6c9de2b931cf86afe41f504a4e175dd9dee7ed47047"
+  },
+  {
+    "path": "sources/fonts/fraunces-normal-latin-6a837066.woff2",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/fraunces-normal-latin-6a837066.woff2",
+    "sha256": "7234ed860a9cc83045413c4faee63c960a8f2d1917adcf728119307d56e0d783"
+  },
+  {
+    "path": "sources/fonts/fraunces-normal-latin-ext-7cdca5ec.woff2",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/fraunces-normal-latin-ext-7cdca5ec.woff2",
+    "sha256": "a2930b27d13a228bd9ab6a49269b5f800237892ad560cb9dd7fab01b1620f88e"
+  },
+  {
+    "path": "sources/fonts/jetbrains-mono-normal-latin-cc27b304.woff2",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/jetbrains-mono-normal-latin-cc27b304.woff2",
+    "sha256": "83c005d49d8a6a50474c73a5a36ac0468076e9c4a29da7bdb14995d80560a5be"
+  },
+  {
+    "path": "sources/fonts/jetbrains-mono-normal-latin-ext-b19c2080.woff2",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/jetbrains-mono-normal-latin-ext-b19c2080.woff2",
+    "sha256": "db5ff4db83e580426280e9337a58dc57d3a83784a1b03ad80914651594441d52"
+  },
+  {
+    "path": "sources/fonts/jetbrainsmono-OFL.txt",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/jetbrainsmono-OFL.txt",
+    "sha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d"
+  },
+  {
+    "path": "sources/fonts/outfit-OFL.txt",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/outfit-OFL.txt",
+    "sha256": "c676351bf8576b9aba743cd5eaa8c0e7ee0d51f805d720447b4df4ddb6a2e416"
+  },
+  {
+    "path": "sources/fonts/outfit-normal-latin-836b5877.woff2",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/outfit-normal-latin-836b5877.woff2",
+    "sha256": "6c18d579fd87c3776be068b762cbc83fde3acb543d49eabd3ade842eb987e887"
+  },
+  {
+    "path": "sources/fonts/outfit-normal-latin-ext-a98bd924.woff2",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/outfit-normal-latin-ext-a98bd924.woff2",
+    "sha256": "0f53d1c03b3918d744a843b5039001ee31695ca1e255e3914188df81beb461e9"
+  },
+  {
+    "path": "sources/fonts/sources.json",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/sources.json",
+    "sha256": "31d567ade0624f289555ae9c534c8b02b1fc328e688b2b6c6f89cfd46db62ff7"
+  },
+  {
+    "path": "sources/fonts/syne-OFL.txt",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/syne-OFL.txt",
+    "sha256": "cc43cdce6f91c57989af8459341c276655e34224e954fa69c2ad700831a742d8"
+  },
+  {
+    "path": "sources/fonts/syne-normal-latin-0b86590d.woff2",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/syne-normal-latin-0b86590d.woff2",
+    "sha256": "68b623f0e45b905041b2edb9b2e4f563a505f13db1cd06b5f1946eb2e1f47048"
+  },
+  {
+    "path": "sources/fonts/syne-normal-latin-ext-6de212dd.woff2",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/syne-normal-latin-ext-6de212dd.woff2",
+    "sha256": "83885b130cf2a67bc2fd6175d6f3c2875833552c1762b5943b51335038ae01f2"
+  },
+  {
+    "path": "sources/fonts/outfit-variable.ttf",
+    "repository": "https://github.com/google/fonts",
+    "commit": "7af0d90b4d532ffa4b041937b560c6df4e7b1e95",
+    "upstreamPath": "ofl/outfit/Outfit[wght].ttf",
+    "sha256": "fc7287273e66929776e2ba54f144fe699080bec29f61bf649d70d871468aeade"
+  },
+  {
+    "path": "sources/upstream/app-icon-cyan-512.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/cyan/android-chrome-512x512.png",
+    "sha256": "d464ea4a368e211f3361e8e7878dd5500a40ce6476009ecc36e8adb94ad3c6b3"
+  },
+  {
+    "path": "sources/upstream/app-icon-emerald-512.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/emerald/android-chrome-512x512.png",
+    "sha256": "097c12b7ec85f6b22766da5f84b26ea43f4448397f984e2f25c2dce53df81a2d"
+  },
+  {
+    "path": "sources/upstream/app-icon-sapphire-512.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/sapphire/android-chrome-512x512.png",
+    "sha256": "ff446fd33f4a2113c98873bd2bac5ddd5db63be2ba02f28a6ae67da293adaccb"
+  },
+  {
+    "path": "sources/upstream/app-icon-amethyst-512.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/amethyst/android-chrome-512x512.png",
+    "sha256": "976f2c309fdf97cb055183520d594859376b2c08e47d37ad10362ac1d135b2f6"
+  },
+  {
+    "path": "sources/upstream/app-icon-amber-512.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/amber/android-chrome-512x512.png",
+    "sha256": "e99e523fb69cc2f5ff4429abbfa8db0e97b0c1f4c8f79dad83f2c3faf146c0ad"
+  },
+  {
+    "path": "sources/upstream/app-icon-coral-512.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/coral/android-chrome-512x512.png",
+    "sha256": "b1c2f7b65be709f65c360747280ce04c88689c0cc97ce6197676267ba6bca08f"
+  },
+  {
+    "path": "sources/upstream/app-icon-blush-512.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/blush/android-chrome-512x512.png",
+    "sha256": "a1852e87dddd936e77fd9306e5088e755c52124fed39e10b41e9754fbeee314d"
+  },
+  {
+    "path": "sources/upstream/app-icon-moss-512.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/moss/android-chrome-512x512.png",
+    "sha256": "00f924852cd70569ca4442d647ec3401564b602d89fc81ee33d691a09d784238"
+  },
+  {
+    "path": "sources/fonts/outfit-variable-OFL.txt",
+    "repository": "https://github.com/google/fonts",
+    "commit": "7af0d90b4d532ffa4b041937b560c6df4e7b1e95",
+    "upstreamPath": "ofl/outfit/OFL.txt",
+    "sha256": "c676351bf8576b9aba743cd5eaa8c0e7ee0d51f805d720447b4df4ddb6a2e416"
+  }
+]
