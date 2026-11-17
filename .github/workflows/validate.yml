@@ -1,4 +1,4 @@
-name: Validate brand kit
+name: Validate brand collection
 on:
   push:
   pull_request:
@@ -6,7 +6,14 @@ permissions:
   contents: read
 jobs:
   validate:
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - runner: ubuntu-24.04-arm
+            canonical: true
+          - runner: ubuntu-latest
+            canonical: false
+    runs-on: ${{ matrix.runner }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -14,10 +21,16 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
+      - name: Validate committed originals, excerpts and archives
+        run: npm run check
       - run: npm run build
-      - run: npm run check
+      - name: Validate rebuilt collection
+        run: npm run check
       - run: npm test
-      - name: Verify generated assets are committed
+      # JPEG encoders can differ slightly across CPU architectures. ARM64 is
+      # the canonical export environment; x64 still validates both collections.
+      - name: Verify canonical exports are committed
+        if: matrix.canonical
         run: |
           git diff --exit-code
           test -z "$(git ls-files --others --exclude-standard)"
