@@ -7,3 +7,22 @@
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.search-icon{width:18px;height:18px;flex:0 0 18px;display:block}.asset-grid{margin-top:24px}.search input{line-height:20px}
 
 .copy-card-header{margin-bottom:16px}.copy-grid{margin-top:18px}
+
+/* Appearance affects the catalog surfaces, never the downloadable artwork. */
+:root{color-scheme:light}
+:root[data-theme="dark"]{color-scheme:dark;--ink:#f5f5f5;--muted:#b0b0b0;--line:#343434;--paper:#171717;--ruby-text:#fda4af;background:#0a0a0a}
+.theme-toggle{margin-top:auto;border:1px solid var(--line);border-radius:9px;background:transparent;color:var(--ink);padding:11px 14px;text-align:left;font-size:13px}
+.theme-toggle::before{content:"";display:inline-block;width:9px;height:9px;border:1px solid currentColor;border-radius:50%;margin-right:9px}
+.theme-toggle[aria-pressed="true"]::before{background:var(--ruby);border-color:var(--ruby)}
+[data-theme="dark"] .sidebar,[data-theme="dark"] .search,[data-theme="dark"] select,[data-theme="dark"] .skip,[data-theme="dark"] .noscript{background:#171717}
+[data-theme="dark"] nav a,[data-theme="dark"] .asset-download,[data-theme="dark"] .resource-preview{color:var(--muted)}
+[data-theme="dark"] nav a:hover,[data-theme="dark"] .asset-preview,[data-theme="dark"] .type-specimen,[data-theme="dark"] .empty{background:#202020}
+[data-theme="dark"] nav a[aria-current]{background:#3b1420;color:var(--ruby-text)}
+[data-theme="dark"] .hero-mark{background:#28131b}
+[data-theme="dark"] .asset-card,[data-theme="dark"] .copy-card,[data-theme="dark"] .swatch{background:#141414}
+[data-theme="dark"] .search,[data-theme="dark"] select,[data-theme="dark"] .copy-card button,[data-theme="dark"] .swatch button{border-color:var(--line)}
+[data-theme="dark"] .nav-label,[data-theme="dark"] .brand-sub{color:var(--muted)}
+[data-theme="dark"] .primary,[data-theme="dark"] #toast{background:#f5f5f5;color:#171717}
+[data-theme="dark"] .primary:hover{background:#e5e5e5}
+[data-theme="dark"] :is(a,button,input,select):focus-visible{outline-color:#fda4af}
+@media(max-width:760px){.sidebar{position:relative}.theme-toggle{position:absolute;top:20px;right:20px;margin:0}}
