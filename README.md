@@ -1,32 +1,20 @@
-# LANIS existing brand collection
+# LANIS branding
 
-This repository collects **existing** LANIS artwork, fonts, product colours and marketing text. It does not define a new identity or write new campaigns.
+A manually maintained library of existing LANIS branding and marketing text.
 
-Open [index.html](index.html) locally to search, download and copy the collected material. The catalog works offline. Every asset and text entry links to its original committed source.
+Open [index.html](index.html) to search assets, select a size or format, download files, and copy text. It works directly from disk, with no installation or build step.
 
-| Material | Location |
-| --- | --- |
-| Complete collection with sources | [Brand kit ZIP](downloads/lanis-brand-kit.zip) |
-| All existing favicon sizes, nine icon themes and default aliases | [Original app assets](assets/app-icons/original/) |
-| Extra icon sizes from the existing UI generator | [Additional sizes](assets/app-icons/additional/) |
-| Original SVG and PNG social preview, plus resized exports | [Social assets](assets/social/) |
-| Existing Android launcher, adaptive and monochrome resources | [Android assets](assets/android/) |
-| Existing admin portal logo | [Admin asset](assets/admin/) |
-| Historical product images and resized exports | [Screenshots](assets/screenshots/) |
-| Exact existing marketing text | [Copy index](copy/library.json), [German excerpts](copy/de/) |
-| Existing bundled fonts | [Fonts](sources/lanis_ui/public/fonts/) |
-| Product palette and CSS defaults | [Extracted tokens](brand/tokens.json) |
-| File origins and transformations | [Manifest](assets/manifest.json), [source provenance](sources/provenance.json) |
+- [Logos and icons](assets/icons/): nine colour variants in the available sizes, browser favicon and the existing monochrome vector resource.
+- [Social images](assets/social/): the existing social preview and its size/format exports.
+- [Product screenshots](assets/screenshots/): dashboard and colour-theme images.
+- [Fonts](fonts/): existing font files and their licences.
+- [Marketing text](copy/marketing.js): one entry per existing wording, organised by content type.
+- [Colours](brand/colours.js): existing palette values.
 
-Originals are copied byte-for-byte. Additional icon sizes are produced by the existing `lanis_ui/scripts/generate-themed-icons.mjs` with its original artwork, palettes and recolouring algorithm. The adapter only adds PNG resolutions and skips the unused legacy ICO export; existing ICOs are copied unchanged. Resized images never exceed their source resolution. No caps are extracted into new standalone logos, no new lockups or layouts are authored, and no copy is rewritten or translated.
+[Download the whole library](https://github.com/Lanis-dev/branding/archive/refs/heads/main.zip).
 
-```sh
-npm ci
-npm run build
-npm run check
-npm test
-npm run test:browser  # requires local Chromium, or CHROME_PATH
-npm run serve       # http://127.0.0.1:4173
-```
+Each asset is stored once. Shared web, Android and admin icons use the same files. Different sizes and formats are available together; copies of upstream repositories and redundant aliases are not kept here. The complete download is GitHub’s repository archive rather than another stored copy of the library.
 
-No installation is needed to open the committed catalog or use the assets. Read the [source inventory](docs/BRAND.md), [maintenance instructions](docs/MAINTAINING.md) and [attribution](docs/RIGHTS.md).
+To maintain the library, copy existing files into the appropriate asset folder and update [the catalog list](catalog/assets.js) by hand. Edit existing text in `copy/marketing.js` and colours in `brand/colours.js` directly. No import scripts, generators, synchronisation jobs or GitHub Actions workflows are needed.
+
+Do not invent logos, layouts, slogans or translations. Extra icon sizes already present here were exported using the existing LANIS icon script without changing its artwork or palette. Raster icons are available up to their native 512 px. Product screenshots and some wording are historical; this library preserves the existing material rather than validating its claims. Font licences remain with the fonts.

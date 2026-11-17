@@ -1,7 +1,9 @@
-# Existing branding collection
+# Branding library
 
-This repository collects existing LANIS branding. Do not create brand assets, standalone extracted marks, lockups, layout templates, marketing copy, translations or new brand usage rules. Every collected asset must have immutable upstream provenance; every text excerpt must match its source exactly.
+This is a manually maintained collection of existing LANIS branding. Do not invent assets or copy, create campaign layouts or translations, or add brand rules. Organise by content and use, not by source repository or application. Keep one canonical copy of each asset. Do not add upstream snapshots, provenance links to every item, copying/sync pipelines, redundant archives or GitHub Actions workflows.
 
-Image generation is prohibited for every agent on this machine. Never use image-generation tools, models, APIs, services, CLIs or scripts, and never delegate image generation. The owner explicitly allows running or modifying existing project asset scripts to export the existing artwork's variants. This exception allows size exports from the existing generator; it does not authorize new artwork or compositions.
+Copy existing material into the appropriate folder and update catalog/assets.js, copy/marketing.js or brand/colours.js by hand. Existing project asset scripts may be used when requested to export sizes or variants of the existing artwork. Do not change its geometry, palettes or typography to create a new identity.
 
-Read docs/MAINTAINING.md. Fetch origin and use a separate task worktree. Do not modify another checkout's changes or production. Run npm ci, npm run build, npm run check and npm test; run npm run test:browser for catalog changes. Preserve source hashes and font licences. Refer to the backend as lanis_api.
+Image generation is prohibited for every agent on this machine. Never call image-generation tools, models, APIs, services, CLIs or scripts, or delegate image generation. Use existing assets and actual HTML/CSS for catalog work.
+
+Fetch origin before new work and use a separate task worktree. Do not modify other checkouts or production. No build is required. Check catalog changes at desktop and mobile widths and verify local download paths. Refer to the backend as lanis_api.
