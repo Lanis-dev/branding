@@ -1,28 +1,24 @@
-# Lanis brand guide
+# Existing material inventory
 
-## Name and positioning
+This is a collection, not a new brand guide. It adds no rules for wordmarks, clear space, minimum sizes, typography combinations or new campaigns.
 
-Write **Lanis** in public copy, matching the current product. LANIS is acceptable in internal project references. Use “the modern, unofficial interface for Schulportal Hessen” as the descriptor. Never imply endorsement by the state of Hesse, a school, or Schulportal Hessen.
+## Artwork
 
-The identity is an extension of the current product, not a rebrand. Ruby is the default accent. The original shaded app icon remains intact. The flat graduation cap comes from the current Open Graph SVG. Kit lockups combine that existing cap with Outfit; these are new proposed compositions, not a recovered original wordmark.
+- **Web app icons:** every committed size, all nine palettes, default aliases, favicon ICO and PWA manifests from `lanis_ui/public/`. The upstream icon generator, original raster sources and palette file are preserved under `sources/lanis_ui/scripts/`.
+- **Additional icon sizes:** 24, 48, 64, 128 and 256 px PNGs from the same existing generator. Colours, cap geometry and shading are unchanged. Sources are 512 px; no larger “high resolution” icon is invented.
+- **Social preview:** the existing complete `opengraph.svg` and `opengraph.png`. The SVG retains its original text and Lato font reference. The PNG preserves the existing rendering. No standalone flat logo or wordmark is extracted from it.
+- **Android:** committed launcher PNGs, adaptive-icon XML, monochrome notification glyph and supporting resources from the separate `feat/android-app` branch. Its original generator is also included as reference. XML resources retain their existing Android resource references; use the resource folders together.
+- **Admin portal:** the existing `lanis_admin/public/lanis-logo.png`.
+- **Product images:** existing historical dashboard and theme images. The navigation image is omitted because it contains personal names. Other landing screenshots have not been reviewed for this collection; they are not silently substituted or recreated.
 
-## Logo use
+Every original file is tied to a repository, commit, path and SHA-256 in `sources/provenance.json`. The asset manifest records whether a file is an exact copy, an output of the existing icon script, or a resized/encoded copy of an existing raster image.
 
-- Prefer the ruby flat mark on light surfaces, the white mark on dark surfaces, and ink for single-colour use.
-- Use the original shaded app icon for app listings or when matching the installed product. Its native source is 512 × 512; exports never enlarge it.
-- Keep a clear space of at least one quarter of the mark width around standalone marks. Keep at least half the icon height clear around lockups.
-- Minimum display: 24 CSS px for the standalone mark, 160 CSS px for a horizontal lockup. Tiny favicon exports are provided for browser use.
-- Do not stretch, rotate, crop, add effects, or place a mark over a busy photograph. Keep the cap and its proportions intact.
-- SVG masters scale without a fixed resolution. For print, use an SVG in a layout application; confirm colours and physical size with the printer. RGB PNGs are not CMYK press files.
+## Text
 
-## Colour and type
+`copy/library.json` contains exact source excerpts from the current landing page, the legacy landing page, HTML metadata and the social-preview SVG. Each has the local source file, character offsets, line number and immutable upstream link. Only German text was collected from these sources; no translations, store listing or new campaign copy have been created.
 
-`brand/tokens.json` is the machine-readable source. `brand/tokens.css` provides CSS custom properties. Ruby `#f43f5e`, dark ruby `#2d0812`, ink `#123446`, and paper `#fcfcf9` come from current product assets. Use ruby text `#be123c` for small text on paper; the bright accent is best used for large colour areas and marks. Check contrast for the actual text size and background.
+Existing claims such as speed figures or colour counts are preserved as they appear in the source. Their inclusion does not independently validate them. Legacy wording is labelled as historical. Changes to the source should be collected again rather than rewritten here.
 
-Outfit is the UI and body face, Syne is available for display, Fraunces for editorial emphasis, and JetBrains Mono for technical labels. All bundled fonts retain their SIL OFL notices. The kit lockup uses outlined Outfit at weight 700, so recipients do not need fonts installed. The original social SVG uses Lato and is preserved as historical source; it is not the kit wordmark.
+## Colours and fonts
 
-## Voice
-
-Write clear, friendly German with “du”. Name the useful action before the technology. Keep English translations simple. Explain that available modules depend on the school. Avoid superlatives, guaranteed delivery, exact speed claims without a current benchmark, invented user counts, and claims about privacy, pricing or store availability that have not been verified.
-
-All new marketing text and translations are drafts for editorial review. `source-adapted` marks text derived from product material, not approval to publish. Channel-specific limits are checked where defined; always review final platform requirements before submission.
+Palette values come directly from `scripts/icon-palettes.mjs`; the unmodified `:root` defaults come from the UI stylesheet. The existing UI font configuration and complete bundled font directory are retained with their original licences. This collection assigns no new display, editorial or logo typography rules.

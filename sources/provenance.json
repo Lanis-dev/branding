@@ -1,219 +1,1034 @@
 [
   {
-    "path": "sources/upstream/opengraph.svg",
+    "path": "sources/lanis_ui/docs/icon-usage.md",
     "repository": "https://github.com/joan-code6/lanis_ui",
     "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
-    "upstreamPath": "public/opengraph.svg",
-    "sha256": "5b0783f8beaa794001d5c516eb18dfc3a4d4610f388cf957470adc894c269cc2"
+    "upstreamPath": "docs/icon-usage.md",
+    "sha256": "94ff6a4a662a424abf173aa6dd2335b090f5142839d7e47c4e145b5631e110a0",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/docs/icon-usage.md"
   },
   {
-    "path": "sources/upstream/android-chrome-512x512.png",
+    "path": "sources/lanis_ui/index.html",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "index.html",
+    "sha256": "115f89eec72021144401eb6fe0998fd7c2cd60f497d29b12aa6875dd51762f55",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/index.html"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/android-chrome-192x192.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/android-chrome-192x192.png",
+    "sha256": "55c8cf80ca297f2160057f3224ef2847ada117ba141ae440d0ec34e632a9a9e1",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/android-chrome-192x192.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/android-chrome-512x512.png",
     "repository": "https://github.com/joan-code6/lanis_ui",
     "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
     "upstreamPath": "public/favicon/android-chrome-512x512.png",
-    "sha256": "fc0879063950a3ea209fe26ce96a28f2aaf9e2e481cde034e5639cc899ba3b6a"
+    "sha256": "fc0879063950a3ea209fe26ce96a28f2aaf9e2e481cde034e5639cc899ba3b6a",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/android-chrome-512x512.png"
   },
   {
-    "path": "sources/upstream/favicon.ico",
+    "path": "sources/lanis_ui/public/favicon/apple-touch-icon.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/apple-touch-icon.png",
+    "sha256": "d00215db5d0512892ea739857d72f56861f556c40fa12dd1b2a2b54b69563b8f",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/apple-touch-icon.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/favicon-16x16.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/favicon-16x16.png",
+    "sha256": "a7b8559c4f17aba61de5b7c9e4d6f262da30c7fa9c785ab15771ee828e25bf88",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/favicon-16x16.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/favicon-32x32.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/favicon-32x32.png",
+    "sha256": "a33b820580e3239da3b6c08c66c83090adb77182c073ab4d3bd7edf0a4a8077a",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/favicon-32x32.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/favicon.ico",
     "repository": "https://github.com/joan-code6/lanis_ui",
     "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
     "upstreamPath": "public/favicon/favicon.ico",
-    "sha256": "c96d308de7d66c40981840e30f0e51865ebee727ec871c00031799da7547158c"
+    "sha256": "c96d308de7d66c40981840e30f0e51865ebee727ec871c00031799da7547158c",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/favicon.ico"
   },
   {
-    "path": "sources/upstream/lanis-dashboard.png",
+    "path": "sources/lanis_ui/public/favicon/site.webmanifest",
     "repository": "https://github.com/joan-code6/lanis_ui",
     "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
-    "upstreamPath": "public/landing/lanis-dashboard.png",
-    "sha256": "f6ba5a6a035c20b7473af575da54743df5596823c4e53d5d2c516d2a64291312"
+    "upstreamPath": "public/favicon/site.webmanifest",
+    "sha256": "c8b891f2b64e9df37a34574bd6155158640a8254ae30737ebeb314e5016e2c1d",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/site.webmanifest"
   },
   {
-    "path": "sources/upstream/themes.png",
+    "path": "sources/lanis_ui/public/favicon/themes/amber/android-chrome-192x192.png",
     "repository": "https://github.com/joan-code6/lanis_ui",
     "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
-    "upstreamPath": "public/landing/themes.png",
-    "sha256": "ffd11badb068e7ad8e6ed9a89bfa4abde041a8b23c3dd9f5972a3f539a5c46da"
+    "upstreamPath": "public/favicon/themes/amber/android-chrome-192x192.png",
+    "sha256": "a6e6a74491e6a6474ffbde9188e54776ef739c49b09a1833410ba02391063dfd",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/amber/android-chrome-192x192.png"
   },
   {
-    "path": "sources/fonts/README.md",
-    "repository": "https://github.com/joan-code6/lanis_ui",
-    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
-    "upstreamPath": "public/fonts/README.md",
-    "sha256": "05058b3bc48bce0919463ba033d159409fffed4d8f82f0e33369f03f37147d8f"
-  },
-  {
-    "path": "sources/fonts/fraunces-OFL.txt",
-    "repository": "https://github.com/joan-code6/lanis_ui",
-    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
-    "upstreamPath": "public/fonts/fraunces-OFL.txt",
-    "sha256": "bdf4c22802eaf804f998195871c6b8938aac2ac14b2d78a8bd66a6f1eced833b"
-  },
-  {
-    "path": "sources/fonts/fraunces-italic-latin-c63fd26c.woff2",
-    "repository": "https://github.com/joan-code6/lanis_ui",
-    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
-    "upstreamPath": "public/fonts/fraunces-italic-latin-c63fd26c.woff2",
-    "sha256": "d6d7a48008994000fc871bd66d98e247fdb41600edf2ddc1851ce2c6f3678de3"
-  },
-  {
-    "path": "sources/fonts/fraunces-italic-latin-ext-0bead994.woff2",
-    "repository": "https://github.com/joan-code6/lanis_ui",
-    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
-    "upstreamPath": "public/fonts/fraunces-italic-latin-ext-0bead994.woff2",
-    "sha256": "a4ea6f549b50fbc4d055a6c9de2b931cf86afe41f504a4e175dd9dee7ed47047"
-  },
-  {
-    "path": "sources/fonts/fraunces-normal-latin-6a837066.woff2",
-    "repository": "https://github.com/joan-code6/lanis_ui",
-    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
-    "upstreamPath": "public/fonts/fraunces-normal-latin-6a837066.woff2",
-    "sha256": "7234ed860a9cc83045413c4faee63c960a8f2d1917adcf728119307d56e0d783"
-  },
-  {
-    "path": "sources/fonts/fraunces-normal-latin-ext-7cdca5ec.woff2",
-    "repository": "https://github.com/joan-code6/lanis_ui",
-    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
-    "upstreamPath": "public/fonts/fraunces-normal-latin-ext-7cdca5ec.woff2",
-    "sha256": "a2930b27d13a228bd9ab6a49269b5f800237892ad560cb9dd7fab01b1620f88e"
-  },
-  {
-    "path": "sources/fonts/jetbrains-mono-normal-latin-cc27b304.woff2",
-    "repository": "https://github.com/joan-code6/lanis_ui",
-    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
-    "upstreamPath": "public/fonts/jetbrains-mono-normal-latin-cc27b304.woff2",
-    "sha256": "83c005d49d8a6a50474c73a5a36ac0468076e9c4a29da7bdb14995d80560a5be"
-  },
-  {
-    "path": "sources/fonts/jetbrains-mono-normal-latin-ext-b19c2080.woff2",
-    "repository": "https://github.com/joan-code6/lanis_ui",
-    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
-    "upstreamPath": "public/fonts/jetbrains-mono-normal-latin-ext-b19c2080.woff2",
-    "sha256": "db5ff4db83e580426280e9337a58dc57d3a83784a1b03ad80914651594441d52"
-  },
-  {
-    "path": "sources/fonts/jetbrainsmono-OFL.txt",
-    "repository": "https://github.com/joan-code6/lanis_ui",
-    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
-    "upstreamPath": "public/fonts/jetbrainsmono-OFL.txt",
-    "sha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d"
-  },
-  {
-    "path": "sources/fonts/outfit-OFL.txt",
-    "repository": "https://github.com/joan-code6/lanis_ui",
-    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
-    "upstreamPath": "public/fonts/outfit-OFL.txt",
-    "sha256": "c676351bf8576b9aba743cd5eaa8c0e7ee0d51f805d720447b4df4ddb6a2e416"
-  },
-  {
-    "path": "sources/fonts/outfit-normal-latin-836b5877.woff2",
-    "repository": "https://github.com/joan-code6/lanis_ui",
-    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
-    "upstreamPath": "public/fonts/outfit-normal-latin-836b5877.woff2",
-    "sha256": "6c18d579fd87c3776be068b762cbc83fde3acb543d49eabd3ade842eb987e887"
-  },
-  {
-    "path": "sources/fonts/outfit-normal-latin-ext-a98bd924.woff2",
-    "repository": "https://github.com/joan-code6/lanis_ui",
-    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
-    "upstreamPath": "public/fonts/outfit-normal-latin-ext-a98bd924.woff2",
-    "sha256": "0f53d1c03b3918d744a843b5039001ee31695ca1e255e3914188df81beb461e9"
-  },
-  {
-    "path": "sources/fonts/sources.json",
-    "repository": "https://github.com/joan-code6/lanis_ui",
-    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
-    "upstreamPath": "public/fonts/sources.json",
-    "sha256": "31d567ade0624f289555ae9c534c8b02b1fc328e688b2b6c6f89cfd46db62ff7"
-  },
-  {
-    "path": "sources/fonts/syne-OFL.txt",
-    "repository": "https://github.com/joan-code6/lanis_ui",
-    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
-    "upstreamPath": "public/fonts/syne-OFL.txt",
-    "sha256": "cc43cdce6f91c57989af8459341c276655e34224e954fa69c2ad700831a742d8"
-  },
-  {
-    "path": "sources/fonts/syne-normal-latin-0b86590d.woff2",
-    "repository": "https://github.com/joan-code6/lanis_ui",
-    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
-    "upstreamPath": "public/fonts/syne-normal-latin-0b86590d.woff2",
-    "sha256": "68b623f0e45b905041b2edb9b2e4f563a505f13db1cd06b5f1946eb2e1f47048"
-  },
-  {
-    "path": "sources/fonts/syne-normal-latin-ext-6de212dd.woff2",
-    "repository": "https://github.com/joan-code6/lanis_ui",
-    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
-    "upstreamPath": "public/fonts/syne-normal-latin-ext-6de212dd.woff2",
-    "sha256": "83885b130cf2a67bc2fd6175d6f3c2875833552c1762b5943b51335038ae01f2"
-  },
-  {
-    "path": "sources/fonts/outfit-variable.ttf",
-    "repository": "https://github.com/google/fonts",
-    "commit": "7af0d90b4d532ffa4b041937b560c6df4e7b1e95",
-    "upstreamPath": "ofl/outfit/Outfit[wght].ttf",
-    "sha256": "fc7287273e66929776e2ba54f144fe699080bec29f61bf649d70d871468aeade"
-  },
-  {
-    "path": "sources/upstream/app-icon-cyan-512.png",
-    "repository": "https://github.com/joan-code6/lanis_ui",
-    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
-    "upstreamPath": "public/favicon/themes/cyan/android-chrome-512x512.png",
-    "sha256": "d464ea4a368e211f3361e8e7878dd5500a40ce6476009ecc36e8adb94ad3c6b3"
-  },
-  {
-    "path": "sources/upstream/app-icon-emerald-512.png",
-    "repository": "https://github.com/joan-code6/lanis_ui",
-    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
-    "upstreamPath": "public/favicon/themes/emerald/android-chrome-512x512.png",
-    "sha256": "097c12b7ec85f6b22766da5f84b26ea43f4448397f984e2f25c2dce53df81a2d"
-  },
-  {
-    "path": "sources/upstream/app-icon-sapphire-512.png",
-    "repository": "https://github.com/joan-code6/lanis_ui",
-    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
-    "upstreamPath": "public/favicon/themes/sapphire/android-chrome-512x512.png",
-    "sha256": "ff446fd33f4a2113c98873bd2bac5ddd5db63be2ba02f28a6ae67da293adaccb"
-  },
-  {
-    "path": "sources/upstream/app-icon-amethyst-512.png",
-    "repository": "https://github.com/joan-code6/lanis_ui",
-    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
-    "upstreamPath": "public/favicon/themes/amethyst/android-chrome-512x512.png",
-    "sha256": "976f2c309fdf97cb055183520d594859376b2c08e47d37ad10362ac1d135b2f6"
-  },
-  {
-    "path": "sources/upstream/app-icon-amber-512.png",
+    "path": "sources/lanis_ui/public/favicon/themes/amber/android-chrome-512x512.png",
     "repository": "https://github.com/joan-code6/lanis_ui",
     "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
     "upstreamPath": "public/favicon/themes/amber/android-chrome-512x512.png",
-    "sha256": "e99e523fb69cc2f5ff4429abbfa8db0e97b0c1f4c8f79dad83f2c3faf146c0ad"
+    "sha256": "e99e523fb69cc2f5ff4429abbfa8db0e97b0c1f4c8f79dad83f2c3faf146c0ad",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/amber/android-chrome-512x512.png"
   },
   {
-    "path": "sources/upstream/app-icon-coral-512.png",
+    "path": "sources/lanis_ui/public/favicon/themes/amber/apple-touch-icon.png",
     "repository": "https://github.com/joan-code6/lanis_ui",
     "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
-    "upstreamPath": "public/favicon/themes/coral/android-chrome-512x512.png",
-    "sha256": "b1c2f7b65be709f65c360747280ce04c88689c0cc97ce6197676267ba6bca08f"
+    "upstreamPath": "public/favicon/themes/amber/apple-touch-icon.png",
+    "sha256": "fb4a6502354de2e68d78e81a66963314c3e6c7103fd7367cb6ba27bc7f1a94db",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/amber/apple-touch-icon.png"
   },
   {
-    "path": "sources/upstream/app-icon-blush-512.png",
+    "path": "sources/lanis_ui/public/favicon/themes/amber/favicon-16x16.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/amber/favicon-16x16.png",
+    "sha256": "8352ff7c67d52a54e38c125902be3a27bfb6c2c6ff1aceaee539b0934f64d9ca",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/amber/favicon-16x16.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/amber/favicon-32x32.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/amber/favicon-32x32.png",
+    "sha256": "65833b74c4424abe8fd4b9dfc2cb314837d095b98bceb9286ce18101f142f854",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/amber/favicon-32x32.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/amber/site.webmanifest",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/amber/site.webmanifest",
+    "sha256": "008604b9bbc5dbf99e4333bec644743e2cbd5f16dee4a3f3b4f816ee080b8b29",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/amber/site.webmanifest"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/amethyst/android-chrome-192x192.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/amethyst/android-chrome-192x192.png",
+    "sha256": "191bf1652588daf79bb7891ab45a12fb4a287b06f35335571ce2f1366efb54e8",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/amethyst/android-chrome-192x192.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/amethyst/android-chrome-512x512.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/amethyst/android-chrome-512x512.png",
+    "sha256": "976f2c309fdf97cb055183520d594859376b2c08e47d37ad10362ac1d135b2f6",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/amethyst/android-chrome-512x512.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/amethyst/apple-touch-icon.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/amethyst/apple-touch-icon.png",
+    "sha256": "a83751b153f3c0c6352c8eec2a4e93b0f3dd34a0b5b801b5d5979cc1e24aee44",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/amethyst/apple-touch-icon.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/amethyst/favicon-16x16.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/amethyst/favicon-16x16.png",
+    "sha256": "5bc3a2d6f0ff102de8b5e07d0892671f4a1b1619dab7d245297f08677760f694",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/amethyst/favicon-16x16.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/amethyst/favicon-32x32.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/amethyst/favicon-32x32.png",
+    "sha256": "fd81dbd9d58436544c99a3af08fb3684c67a25b2c9a9a993e218e702395d2565",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/amethyst/favicon-32x32.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/amethyst/site.webmanifest",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/amethyst/site.webmanifest",
+    "sha256": "a448b05bc9df57c66b00140b3197adad418fb71245e1a47bc82b4d8f42fe2eda",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/amethyst/site.webmanifest"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/blush/android-chrome-192x192.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/blush/android-chrome-192x192.png",
+    "sha256": "cb2af08a6e75efc58df0e9ecf8ae0a80f0bd397561e546f127a0badd223bad6e",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/blush/android-chrome-192x192.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/blush/android-chrome-512x512.png",
     "repository": "https://github.com/joan-code6/lanis_ui",
     "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
     "upstreamPath": "public/favicon/themes/blush/android-chrome-512x512.png",
-    "sha256": "a1852e87dddd936e77fd9306e5088e755c52124fed39e10b41e9754fbeee314d"
+    "sha256": "a1852e87dddd936e77fd9306e5088e755c52124fed39e10b41e9754fbeee314d",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/blush/android-chrome-512x512.png"
   },
   {
-    "path": "sources/upstream/app-icon-moss-512.png",
+    "path": "sources/lanis_ui/public/favicon/themes/blush/apple-touch-icon.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/blush/apple-touch-icon.png",
+    "sha256": "3c3890b64e485e726d923056cfee7a3416af241f5229f2b080ae014c6cb96eaa",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/blush/apple-touch-icon.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/blush/favicon-16x16.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/blush/favicon-16x16.png",
+    "sha256": "e7256b7e77b83be814c479c2a8544f5835817acbba1918a78bac8c421b23b2f6",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/blush/favicon-16x16.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/blush/favicon-32x32.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/blush/favicon-32x32.png",
+    "sha256": "6ba8f4aa407fea2c294904e789d50c4e3d649ae614750cffcc2844ec649bb61b",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/blush/favicon-32x32.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/blush/site.webmanifest",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/blush/site.webmanifest",
+    "sha256": "0e60e1a153359c642ec342e2b2d0305a855e2f28f365d1409dfa6c6ac90bcbc1",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/blush/site.webmanifest"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/coral/android-chrome-192x192.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/coral/android-chrome-192x192.png",
+    "sha256": "146496d41701114fb7c0be783897019523de1a5ddf727baa9f0ca3a8bdacff7a",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/coral/android-chrome-192x192.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/coral/android-chrome-512x512.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/coral/android-chrome-512x512.png",
+    "sha256": "b1c2f7b65be709f65c360747280ce04c88689c0cc97ce6197676267ba6bca08f",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/coral/android-chrome-512x512.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/coral/apple-touch-icon.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/coral/apple-touch-icon.png",
+    "sha256": "572f72629f2e0a2646b2b789642eebdcb35838e5766820257388d14ba0e9e68f",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/coral/apple-touch-icon.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/coral/favicon-16x16.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/coral/favicon-16x16.png",
+    "sha256": "36b3c92fc75c1940013d10f573274b2486d84ad60a4ba09394ec3efc1c225a10",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/coral/favicon-16x16.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/coral/favicon-32x32.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/coral/favicon-32x32.png",
+    "sha256": "201ba55440dc8ded3a30247b896e962e61e750b6cc4c964f4a63a19d1bda0db2",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/coral/favicon-32x32.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/coral/site.webmanifest",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/coral/site.webmanifest",
+    "sha256": "3e9c42a4386bf2e1117747bd5944d79e8e8a959fa494002b258f2f43b61c354f",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/coral/site.webmanifest"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/cyan/android-chrome-192x192.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/cyan/android-chrome-192x192.png",
+    "sha256": "56347c235cd04a76bec0247102ab422474944a4bd26b60829846e824831ab56e",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/cyan/android-chrome-192x192.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/cyan/android-chrome-512x512.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/cyan/android-chrome-512x512.png",
+    "sha256": "d464ea4a368e211f3361e8e7878dd5500a40ce6476009ecc36e8adb94ad3c6b3",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/cyan/android-chrome-512x512.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/cyan/apple-touch-icon.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/cyan/apple-touch-icon.png",
+    "sha256": "13a323dfbd95d9e4872d679ffb5d051fb692df19c8b03eb36e7d107972f6d2e9",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/cyan/apple-touch-icon.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/cyan/favicon-16x16.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/cyan/favicon-16x16.png",
+    "sha256": "2197707e1b6121446f9a949835e95fa2eb7934cdc4c6768c09db8e3815181c79",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/cyan/favicon-16x16.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/cyan/favicon-32x32.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/cyan/favicon-32x32.png",
+    "sha256": "00642be02a82a2da5a3b0a87c38f4da7ab5a1aab358da44306ed457db5d73ce3",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/cyan/favicon-32x32.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/cyan/site.webmanifest",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/cyan/site.webmanifest",
+    "sha256": "a9367251fb0a4043062032c3601b78b605d7432bf2454f714ebaa67f035f366f",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/cyan/site.webmanifest"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/emerald/android-chrome-192x192.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/emerald/android-chrome-192x192.png",
+    "sha256": "a84022c21c19074ce9dc3be25f58952d32d693f8bc8ed5cde389080bface56bb",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/emerald/android-chrome-192x192.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/emerald/android-chrome-512x512.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/emerald/android-chrome-512x512.png",
+    "sha256": "097c12b7ec85f6b22766da5f84b26ea43f4448397f984e2f25c2dce53df81a2d",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/emerald/android-chrome-512x512.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/emerald/apple-touch-icon.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/emerald/apple-touch-icon.png",
+    "sha256": "dcbf2724cffd2433ede33e693ef5e44950feceb64d5bfd0ee7b06a324d16cdcb",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/emerald/apple-touch-icon.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/emerald/favicon-16x16.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/emerald/favicon-16x16.png",
+    "sha256": "f1d7d1d3028c98ab29e76e1ce403d9ec3ae5736236b68c0b4de4b9145e2d294b",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/emerald/favicon-16x16.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/emerald/favicon-32x32.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/emerald/favicon-32x32.png",
+    "sha256": "6cf068a839af8c34859b01093f979e463897d67df8dd1ecb5bdcfda08d78820f",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/emerald/favicon-32x32.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/emerald/site.webmanifest",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/emerald/site.webmanifest",
+    "sha256": "fef65de0def12e7ec6e5d875e17bfce3c51a182be5214629a69dc0cbddb95b86",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/emerald/site.webmanifest"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/moss/android-chrome-192x192.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/moss/android-chrome-192x192.png",
+    "sha256": "25b3ea94a6b87d32f5824bd89a5af958e767c8776e217c4691a04dc76b0c52b3",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/moss/android-chrome-192x192.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/moss/android-chrome-512x512.png",
     "repository": "https://github.com/joan-code6/lanis_ui",
     "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
     "upstreamPath": "public/favicon/themes/moss/android-chrome-512x512.png",
-    "sha256": "00f924852cd70569ca4442d647ec3401564b602d89fc81ee33d691a09d784238"
+    "sha256": "00f924852cd70569ca4442d647ec3401564b602d89fc81ee33d691a09d784238",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/moss/android-chrome-512x512.png"
   },
   {
-    "path": "sources/fonts/outfit-variable-OFL.txt",
-    "repository": "https://github.com/google/fonts",
-    "commit": "7af0d90b4d532ffa4b041937b560c6df4e7b1e95",
-    "upstreamPath": "ofl/outfit/OFL.txt",
-    "sha256": "c676351bf8576b9aba743cd5eaa8c0e7ee0d51f805d720447b4df4ddb6a2e416"
+    "path": "sources/lanis_ui/public/favicon/themes/moss/apple-touch-icon.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/moss/apple-touch-icon.png",
+    "sha256": "0b7897f13da446dff989a9b136105a71344182563712724763389a724c42c1c0",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/moss/apple-touch-icon.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/moss/favicon-16x16.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/moss/favicon-16x16.png",
+    "sha256": "f7660952c5e6e3b1b900100713ed838a023e513b7affc1f85cbe4e5525647058",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/moss/favicon-16x16.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/moss/favicon-32x32.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/moss/favicon-32x32.png",
+    "sha256": "6b8addeb9ffacf4b7f44291328ef3a92f9be50872c745401f2fbc3ba3b948b0d",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/moss/favicon-32x32.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/moss/site.webmanifest",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/moss/site.webmanifest",
+    "sha256": "7a029d907b29d51e57dbcd5daf59922d4bc1ce0aa9654bad9a5cc08914abcea6",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/moss/site.webmanifest"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/ruby/android-chrome-192x192.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/ruby/android-chrome-192x192.png",
+    "sha256": "55c8cf80ca297f2160057f3224ef2847ada117ba141ae440d0ec34e632a9a9e1",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/ruby/android-chrome-192x192.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/ruby/android-chrome-512x512.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/ruby/android-chrome-512x512.png",
+    "sha256": "fc0879063950a3ea209fe26ce96a28f2aaf9e2e481cde034e5639cc899ba3b6a",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/ruby/android-chrome-512x512.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/ruby/apple-touch-icon.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/ruby/apple-touch-icon.png",
+    "sha256": "d00215db5d0512892ea739857d72f56861f556c40fa12dd1b2a2b54b69563b8f",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/ruby/apple-touch-icon.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/ruby/favicon-16x16.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/ruby/favicon-16x16.png",
+    "sha256": "a7b8559c4f17aba61de5b7c9e4d6f262da30c7fa9c785ab15771ee828e25bf88",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/ruby/favicon-16x16.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/ruby/favicon-32x32.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/ruby/favicon-32x32.png",
+    "sha256": "a33b820580e3239da3b6c08c66c83090adb77182c073ab4d3bd7edf0a4a8077a",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/ruby/favicon-32x32.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/ruby/site.webmanifest",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/ruby/site.webmanifest",
+    "sha256": "c8b891f2b64e9df37a34574bd6155158640a8254ae30737ebeb314e5016e2c1d",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/ruby/site.webmanifest"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/sapphire/android-chrome-192x192.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/sapphire/android-chrome-192x192.png",
+    "sha256": "e6c217aba223d89c5d16e37ff4c0d42a66d3a85ce423be99babc242e4ada1a22",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/sapphire/android-chrome-192x192.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/sapphire/android-chrome-512x512.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/sapphire/android-chrome-512x512.png",
+    "sha256": "ff446fd33f4a2113c98873bd2bac5ddd5db63be2ba02f28a6ae67da293adaccb",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/sapphire/android-chrome-512x512.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/sapphire/apple-touch-icon.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/sapphire/apple-touch-icon.png",
+    "sha256": "c2423c7a21eb2d2d63a663aca8ee9e970323f7a7bfac9e649d5f1902998d4919",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/sapphire/apple-touch-icon.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/sapphire/favicon-16x16.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/sapphire/favicon-16x16.png",
+    "sha256": "aaecf2d0bf5d2bf000c4493aaa3fa3cce0c90fcce893019c857571058dc54f6f",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/sapphire/favicon-16x16.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/sapphire/favicon-32x32.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/sapphire/favicon-32x32.png",
+    "sha256": "886b9d4c17c95a6efbddef04ef2f9d17f69801cc154f246f83a5873c48709b65",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/sapphire/favicon-32x32.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/favicon/themes/sapphire/site.webmanifest",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/favicon/themes/sapphire/site.webmanifest",
+    "sha256": "b563ccf1446135200c218eeaff8939532e7a71cfdd21db18ac22c722bbcd3c69",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/favicon/themes/sapphire/site.webmanifest"
+  },
+  {
+    "path": "sources/lanis_ui/public/fonts/README.md",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/README.md",
+    "sha256": "05058b3bc48bce0919463ba033d159409fffed4d8f82f0e33369f03f37147d8f",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/fonts/README.md"
+  },
+  {
+    "path": "sources/lanis_ui/public/fonts/fonts.css",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/fonts.css",
+    "sha256": "339e8d8b768f4911e94070af4a6b13390f7d010719d14d4a7590fc80a8be013e",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/fonts/fonts.css"
+  },
+  {
+    "path": "sources/lanis_ui/public/fonts/fraunces-OFL.txt",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/fraunces-OFL.txt",
+    "sha256": "bdf4c22802eaf804f998195871c6b8938aac2ac14b2d78a8bd66a6f1eced833b",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/fonts/fraunces-OFL.txt"
+  },
+  {
+    "path": "sources/lanis_ui/public/fonts/fraunces-italic-latin-c63fd26c.woff2",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/fraunces-italic-latin-c63fd26c.woff2",
+    "sha256": "d6d7a48008994000fc871bd66d98e247fdb41600edf2ddc1851ce2c6f3678de3",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/fonts/fraunces-italic-latin-c63fd26c.woff2"
+  },
+  {
+    "path": "sources/lanis_ui/public/fonts/fraunces-italic-latin-ext-0bead994.woff2",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/fraunces-italic-latin-ext-0bead994.woff2",
+    "sha256": "a4ea6f549b50fbc4d055a6c9de2b931cf86afe41f504a4e175dd9dee7ed47047",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/fonts/fraunces-italic-latin-ext-0bead994.woff2"
+  },
+  {
+    "path": "sources/lanis_ui/public/fonts/fraunces-italic-vietnamese-53af843e.woff2",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/fraunces-italic-vietnamese-53af843e.woff2",
+    "sha256": "1d618dae029a112a771fe7f8e73ea046ec1ce781c2fd1c8a4a0997085056bd9a",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/fonts/fraunces-italic-vietnamese-53af843e.woff2"
+  },
+  {
+    "path": "sources/lanis_ui/public/fonts/fraunces-normal-latin-6a837066.woff2",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/fraunces-normal-latin-6a837066.woff2",
+    "sha256": "7234ed860a9cc83045413c4faee63c960a8f2d1917adcf728119307d56e0d783",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/fonts/fraunces-normal-latin-6a837066.woff2"
+  },
+  {
+    "path": "sources/lanis_ui/public/fonts/fraunces-normal-latin-ext-7cdca5ec.woff2",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/fraunces-normal-latin-ext-7cdca5ec.woff2",
+    "sha256": "a2930b27d13a228bd9ab6a49269b5f800237892ad560cb9dd7fab01b1620f88e",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/fonts/fraunces-normal-latin-ext-7cdca5ec.woff2"
+  },
+  {
+    "path": "sources/lanis_ui/public/fonts/fraunces-normal-vietnamese-a4c5fe4f.woff2",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/fraunces-normal-vietnamese-a4c5fe4f.woff2",
+    "sha256": "f18853f63a870ebef013e30e789d8d544f102e4acd94988e57c223d9c796ddf4",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/fonts/fraunces-normal-vietnamese-a4c5fe4f.woff2"
+  },
+  {
+    "path": "sources/lanis_ui/public/fonts/jetbrains-mono-normal-cyrillic-eb83d8d4.woff2",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/jetbrains-mono-normal-cyrillic-eb83d8d4.woff2",
+    "sha256": "e17cfd15fb96909d64095015f958207063a0c07191da3512df7d560a781aebdf",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/fonts/jetbrains-mono-normal-cyrillic-eb83d8d4.woff2"
+  },
+  {
+    "path": "sources/lanis_ui/public/fonts/jetbrains-mono-normal-cyrillic-ext-6b5e37b5.woff2",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/jetbrains-mono-normal-cyrillic-ext-6b5e37b5.woff2",
+    "sha256": "62213be8a78b42f1e29d1452d91e2f8b3e745572a9dd98d3941e39fa00b37d76",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/fonts/jetbrains-mono-normal-cyrillic-ext-6b5e37b5.woff2"
+  },
+  {
+    "path": "sources/lanis_ui/public/fonts/jetbrains-mono-normal-greek-99e40033.woff2",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/jetbrains-mono-normal-greek-99e40033.woff2",
+    "sha256": "0a557721b1f8b36d3f3f84442689a71ca4a744300abcb46a1953f51bfc663b66",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/fonts/jetbrains-mono-normal-greek-99e40033.woff2"
+  },
+  {
+    "path": "sources/lanis_ui/public/fonts/jetbrains-mono-normal-latin-cc27b304.woff2",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/jetbrains-mono-normal-latin-cc27b304.woff2",
+    "sha256": "83c005d49d8a6a50474c73a5a36ac0468076e9c4a29da7bdb14995d80560a5be",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/fonts/jetbrains-mono-normal-latin-cc27b304.woff2"
+  },
+  {
+    "path": "sources/lanis_ui/public/fonts/jetbrains-mono-normal-latin-ext-b19c2080.woff2",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/jetbrains-mono-normal-latin-ext-b19c2080.woff2",
+    "sha256": "db5ff4db83e580426280e9337a58dc57d3a83784a1b03ad80914651594441d52",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/fonts/jetbrains-mono-normal-latin-ext-b19c2080.woff2"
+  },
+  {
+    "path": "sources/lanis_ui/public/fonts/jetbrains-mono-normal-vietnamese-c4064400.woff2",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/jetbrains-mono-normal-vietnamese-c4064400.woff2",
+    "sha256": "c89b9cc0bc6262bd4f8d8494b6961601f3aefa829d08c2e3635f4d501d3a47c2",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/fonts/jetbrains-mono-normal-vietnamese-c4064400.woff2"
+  },
+  {
+    "path": "sources/lanis_ui/public/fonts/jetbrainsmono-OFL.txt",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/jetbrainsmono-OFL.txt",
+    "sha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/fonts/jetbrainsmono-OFL.txt"
+  },
+  {
+    "path": "sources/lanis_ui/public/fonts/outfit-OFL.txt",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/outfit-OFL.txt",
+    "sha256": "c676351bf8576b9aba743cd5eaa8c0e7ee0d51f805d720447b4df4ddb6a2e416",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/fonts/outfit-OFL.txt"
+  },
+  {
+    "path": "sources/lanis_ui/public/fonts/outfit-normal-latin-836b5877.woff2",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/outfit-normal-latin-836b5877.woff2",
+    "sha256": "6c18d579fd87c3776be068b762cbc83fde3acb543d49eabd3ade842eb987e887",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/fonts/outfit-normal-latin-836b5877.woff2"
+  },
+  {
+    "path": "sources/lanis_ui/public/fonts/outfit-normal-latin-ext-a98bd924.woff2",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/outfit-normal-latin-ext-a98bd924.woff2",
+    "sha256": "0f53d1c03b3918d744a843b5039001ee31695ca1e255e3914188df81beb461e9",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/fonts/outfit-normal-latin-ext-a98bd924.woff2"
+  },
+  {
+    "path": "sources/lanis_ui/public/fonts/sources.json",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/sources.json",
+    "sha256": "31d567ade0624f289555ae9c534c8b02b1fc328e688b2b6c6f89cfd46db62ff7",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/fonts/sources.json"
+  },
+  {
+    "path": "sources/lanis_ui/public/fonts/syne-OFL.txt",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/syne-OFL.txt",
+    "sha256": "cc43cdce6f91c57989af8459341c276655e34224e954fa69c2ad700831a742d8",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/fonts/syne-OFL.txt"
+  },
+  {
+    "path": "sources/lanis_ui/public/fonts/syne-normal-greek-420d2e34.woff2",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/syne-normal-greek-420d2e34.woff2",
+    "sha256": "b9ade823e28b34c3a9c038ae698e659f64b66dabeed6c979e0bc347bfcc891a7",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/fonts/syne-normal-greek-420d2e34.woff2"
+  },
+  {
+    "path": "sources/lanis_ui/public/fonts/syne-normal-latin-0b86590d.woff2",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/syne-normal-latin-0b86590d.woff2",
+    "sha256": "68b623f0e45b905041b2edb9b2e4f563a505f13db1cd06b5f1946eb2e1f47048",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/fonts/syne-normal-latin-0b86590d.woff2"
+  },
+  {
+    "path": "sources/lanis_ui/public/fonts/syne-normal-latin-ext-6de212dd.woff2",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/fonts/syne-normal-latin-ext-6de212dd.woff2",
+    "sha256": "83885b130cf2a67bc2fd6175d6f3c2875833552c1762b5943b51335038ae01f2",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/fonts/syne-normal-latin-ext-6de212dd.woff2"
+  },
+  {
+    "path": "sources/lanis_ui/public/icon.webp",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/icon.webp",
+    "sha256": "0dcc04475830f0547dcea2746bd1e7d1871b6ff794609eaf415f391ffc398fba",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/icon.webp"
+  },
+  {
+    "path": "sources/lanis_ui/public/landing/lanis-dashboard.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/landing/lanis-dashboard.png",
+    "sha256": "f6ba5a6a035c20b7473af575da54743df5596823c4e53d5d2c516d2a64291312",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/landing/lanis-dashboard.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/landing/themes.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/landing/themes.png",
+    "sha256": "ffd11badb068e7ad8e6ed9a89bfa4abde041a8b23c3dd9f5972a3f539a5c46da",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/landing/themes.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/opengraph.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/opengraph.png",
+    "sha256": "bf255493c325d96994f7c5ba206445167d57bda0f22aa36cdad73ed812ee97b6",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/opengraph.png"
+  },
+  {
+    "path": "sources/lanis_ui/public/opengraph.svg",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "public/opengraph.svg",
+    "sha256": "5b0783f8beaa794001d5c516eb18dfc3a4d4610f388cf957470adc894c269cc2",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/public/opengraph.svg"
+  },
+  {
+    "path": "sources/lanis_ui/scripts/assets/icon-source-cyan.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "scripts/assets/icon-source-cyan.png",
+    "sha256": "b689aacc826907c2501fab96ebd729ea5f7027990c1578dccfb0accfa0364190",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/scripts/assets/icon-source-cyan.png"
+  },
+  {
+    "path": "sources/lanis_ui/scripts/assets/icon-source.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "scripts/assets/icon-source.png",
+    "sha256": "7eb4c60afe463f6c8b0d797f96bdec0e091a6b3bab792daf22e1766be88349fd",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/scripts/assets/icon-source.png"
+  },
+  {
+    "path": "sources/lanis_ui/scripts/generate-opengraph.mjs",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "scripts/generate-opengraph.mjs",
+    "sha256": "8f801232b599589bfdc37056173daaf93c8537e8ffd03fb310cd86535b21280d",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/scripts/generate-opengraph.mjs"
+  },
+  {
+    "path": "sources/lanis_ui/scripts/generate-themed-icons.mjs",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "scripts/generate-themed-icons.mjs",
+    "sha256": "fe1747eacab1cded1d251a196a726701353a14793c468a4efb90c03a3ad3f070",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/scripts/generate-themed-icons.mjs"
+  },
+  {
+    "path": "sources/lanis_ui/scripts/icon-palettes.mjs",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "scripts/icon-palettes.mjs",
+    "sha256": "469bafb489dabd1616ceb3c74dd54ee41c8173b9328223f0b652a5bd55dc58d4",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/scripts/icon-palettes.mjs"
+  },
+  {
+    "path": "sources/lanis_ui/scripts/optimize-landing-images.mjs",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "scripts/optimize-landing-images.mjs",
+    "sha256": "848bf1f9554ef36f8780104907868fadfc39fca74e1acd669a1ee4f8a85c738f",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/scripts/optimize-landing-images.mjs"
+  },
+  {
+    "path": "sources/lanis_ui/src/components/landing/LandingV1.tsx",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "src/components/landing/LandingV1.tsx",
+    "sha256": "e825120f93efb861077010854d2065d67870b1ae98428cf3c0f0c40e6f73d02d",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/src/components/landing/LandingV1.tsx"
+  },
+  {
+    "path": "sources/lanis_ui/src/components/landing/Landingpage.tsx",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "src/components/landing/Landingpage.tsx",
+    "sha256": "ebfae5f5ce12073897159fb9c266f6d3570ced9ef9b8e8006779e98ccbb563b4",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/src/components/landing/Landingpage.tsx"
+  },
+  {
+    "path": "sources/lanis_ui/src/index.css",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "src/index.css",
+    "sha256": "1615801f0abe4be4690f6ee46eb3854e232b2757191af4c8099e217877437ebb",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/src/index.css"
+  },
+  {
+    "path": "sources/lanis_ui/src/utils/themeAssets.ts",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "src/utils/themeAssets.ts",
+    "sha256": "5fe8b9644c53b7787779afad06f832fae036952cb8c7ceca6d289b35bfbb881d",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/src/utils/themeAssets.ts"
+  },
+  {
+    "path": "sources/lanis_ui/tailwind.config.js",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "66ea0e47f98c6a7d24eb0e6af1e9614e1313a800",
+    "upstreamPath": "tailwind.config.js",
+    "sha256": "8c7fffb6814a0ae2eb9c8a8f5252769cef3e452f603ec646825e1b264ab33898",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/66ea0e47f98c6a7d24eb0e6af1e9614e1313a800/tailwind.config.js"
+  },
+  {
+    "path": "sources/lanis_ui_android/android/app/src/main/res/drawable-nodpi/ic_lanis_amber.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "48a12dfb1905de8ba4dd9724e7f383523770034a",
+    "upstreamPath": "android/app/src/main/res/drawable-nodpi/ic_lanis_amber.png",
+    "sha256": "e99e523fb69cc2f5ff4429abbfa8db0e97b0c1f4c8f79dad83f2c3faf146c0ad",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/48a12dfb1905de8ba4dd9724e7f383523770034a/android/app/src/main/res/drawable-nodpi/ic_lanis_amber.png"
+  },
+  {
+    "path": "sources/lanis_ui_android/android/app/src/main/res/drawable-nodpi/ic_lanis_amethyst.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "48a12dfb1905de8ba4dd9724e7f383523770034a",
+    "upstreamPath": "android/app/src/main/res/drawable-nodpi/ic_lanis_amethyst.png",
+    "sha256": "976f2c309fdf97cb055183520d594859376b2c08e47d37ad10362ac1d135b2f6",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/48a12dfb1905de8ba4dd9724e7f383523770034a/android/app/src/main/res/drawable-nodpi/ic_lanis_amethyst.png"
+  },
+  {
+    "path": "sources/lanis_ui_android/android/app/src/main/res/drawable-nodpi/ic_lanis_blush.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "48a12dfb1905de8ba4dd9724e7f383523770034a",
+    "upstreamPath": "android/app/src/main/res/drawable-nodpi/ic_lanis_blush.png",
+    "sha256": "a1852e87dddd936e77fd9306e5088e755c52124fed39e10b41e9754fbeee314d",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/48a12dfb1905de8ba4dd9724e7f383523770034a/android/app/src/main/res/drawable-nodpi/ic_lanis_blush.png"
+  },
+  {
+    "path": "sources/lanis_ui_android/android/app/src/main/res/drawable-nodpi/ic_lanis_coral.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "48a12dfb1905de8ba4dd9724e7f383523770034a",
+    "upstreamPath": "android/app/src/main/res/drawable-nodpi/ic_lanis_coral.png",
+    "sha256": "b1c2f7b65be709f65c360747280ce04c88689c0cc97ce6197676267ba6bca08f",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/48a12dfb1905de8ba4dd9724e7f383523770034a/android/app/src/main/res/drawable-nodpi/ic_lanis_coral.png"
+  },
+  {
+    "path": "sources/lanis_ui_android/android/app/src/main/res/drawable-nodpi/ic_lanis_cyan.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "48a12dfb1905de8ba4dd9724e7f383523770034a",
+    "upstreamPath": "android/app/src/main/res/drawable-nodpi/ic_lanis_cyan.png",
+    "sha256": "d464ea4a368e211f3361e8e7878dd5500a40ce6476009ecc36e8adb94ad3c6b3",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/48a12dfb1905de8ba4dd9724e7f383523770034a/android/app/src/main/res/drawable-nodpi/ic_lanis_cyan.png"
+  },
+  {
+    "path": "sources/lanis_ui_android/android/app/src/main/res/drawable-nodpi/ic_lanis_emerald.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "48a12dfb1905de8ba4dd9724e7f383523770034a",
+    "upstreamPath": "android/app/src/main/res/drawable-nodpi/ic_lanis_emerald.png",
+    "sha256": "097c12b7ec85f6b22766da5f84b26ea43f4448397f984e2f25c2dce53df81a2d",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/48a12dfb1905de8ba4dd9724e7f383523770034a/android/app/src/main/res/drawable-nodpi/ic_lanis_emerald.png"
+  },
+  {
+    "path": "sources/lanis_ui_android/android/app/src/main/res/drawable-nodpi/ic_lanis_moss.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "48a12dfb1905de8ba4dd9724e7f383523770034a",
+    "upstreamPath": "android/app/src/main/res/drawable-nodpi/ic_lanis_moss.png",
+    "sha256": "00f924852cd70569ca4442d647ec3401564b602d89fc81ee33d691a09d784238",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/48a12dfb1905de8ba4dd9724e7f383523770034a/android/app/src/main/res/drawable-nodpi/ic_lanis_moss.png"
+  },
+  {
+    "path": "sources/lanis_ui_android/android/app/src/main/res/drawable-nodpi/ic_lanis_ruby.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "48a12dfb1905de8ba4dd9724e7f383523770034a",
+    "upstreamPath": "android/app/src/main/res/drawable-nodpi/ic_lanis_ruby.png",
+    "sha256": "fc0879063950a3ea209fe26ce96a28f2aaf9e2e481cde034e5639cc899ba3b6a",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/48a12dfb1905de8ba4dd9724e7f383523770034a/android/app/src/main/res/drawable-nodpi/ic_lanis_ruby.png"
+  },
+  {
+    "path": "sources/lanis_ui_android/android/app/src/main/res/drawable-nodpi/ic_lanis_sapphire.png",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "48a12dfb1905de8ba4dd9724e7f383523770034a",
+    "upstreamPath": "android/app/src/main/res/drawable-nodpi/ic_lanis_sapphire.png",
+    "sha256": "ff446fd33f4a2113c98873bd2bac5ddd5db63be2ba02f28a6ae67da293adaccb",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/48a12dfb1905de8ba4dd9724e7f383523770034a/android/app/src/main/res/drawable-nodpi/ic_lanis_sapphire.png"
+  },
+  {
+    "path": "sources/lanis_ui_android/android/app/src/main/res/drawable/ic_lanis.xml",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "48a12dfb1905de8ba4dd9724e7f383523770034a",
+    "upstreamPath": "android/app/src/main/res/drawable/ic_lanis.xml",
+    "sha256": "5c97ee692e36f556086db0bd5541b7a5f9a69b56ef9139a386ca9c5a68d3e93a",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/48a12dfb1905de8ba4dd9724e7f383523770034a/android/app/src/main/res/drawable/ic_lanis.xml"
+  },
+  {
+    "path": "sources/lanis_ui_android/android/app/src/main/res/drawable/ic_lanis_splash.xml",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "48a12dfb1905de8ba4dd9724e7f383523770034a",
+    "upstreamPath": "android/app/src/main/res/drawable/ic_lanis_splash.xml",
+    "sha256": "0a8d6d5f219ce205f627f493f3c27c93f46d6df5530ca3cf9748b2940dda9aa9",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/48a12dfb1905de8ba4dd9724e7f383523770034a/android/app/src/main/res/drawable/ic_lanis_splash.xml"
+  },
+  {
+    "path": "sources/lanis_ui_android/android/app/src/main/res/drawable/ic_stat_lanis.xml",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "48a12dfb1905de8ba4dd9724e7f383523770034a",
+    "upstreamPath": "android/app/src/main/res/drawable/ic_stat_lanis.xml",
+    "sha256": "f88fb43732e73f06c8cbaa2e831aafa3d274f36f0c8e4be56876529d1cb7a00d",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/48a12dfb1905de8ba4dd9724e7f383523770034a/android/app/src/main/res/drawable/ic_stat_lanis.xml"
+  },
+  {
+    "path": "sources/lanis_ui_android/android/app/src/main/res/mipmap-anydpi/ic_launcher.xml",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "48a12dfb1905de8ba4dd9724e7f383523770034a",
+    "upstreamPath": "android/app/src/main/res/mipmap-anydpi/ic_launcher.xml",
+    "sha256": "6f0598777367ca143e3498d13a28bc6119c4a989a6d402059adb9f5ff2bbaaed",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/48a12dfb1905de8ba4dd9724e7f383523770034a/android/app/src/main/res/mipmap-anydpi/ic_launcher.xml"
+  },
+  {
+    "path": "sources/lanis_ui_android/android/app/src/main/res/mipmap-anydpi/ic_launcher_amber.xml",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "48a12dfb1905de8ba4dd9724e7f383523770034a",
+    "upstreamPath": "android/app/src/main/res/mipmap-anydpi/ic_launcher_amber.xml",
+    "sha256": "998c3d809473c099089aa5b999219f7fe759f80b97906f13579ea84151a2220c",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/48a12dfb1905de8ba4dd9724e7f383523770034a/android/app/src/main/res/mipmap-anydpi/ic_launcher_amber.xml"
+  },
+  {
+    "path": "sources/lanis_ui_android/android/app/src/main/res/mipmap-anydpi/ic_launcher_amethyst.xml",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "48a12dfb1905de8ba4dd9724e7f383523770034a",
+    "upstreamPath": "android/app/src/main/res/mipmap-anydpi/ic_launcher_amethyst.xml",
+    "sha256": "3d2d033fbdeb49693e6206f515c10be11cf08df3b168909962ae60e16e6a538f",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/48a12dfb1905de8ba4dd9724e7f383523770034a/android/app/src/main/res/mipmap-anydpi/ic_launcher_amethyst.xml"
+  },
+  {
+    "path": "sources/lanis_ui_android/android/app/src/main/res/mipmap-anydpi/ic_launcher_blush.xml",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "48a12dfb1905de8ba4dd9724e7f383523770034a",
+    "upstreamPath": "android/app/src/main/res/mipmap-anydpi/ic_launcher_blush.xml",
+    "sha256": "fd79107e80a70f200e44021178a1c8989a750dbcaf5519d9071b68e9c64bf9c4",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/48a12dfb1905de8ba4dd9724e7f383523770034a/android/app/src/main/res/mipmap-anydpi/ic_launcher_blush.xml"
+  },
+  {
+    "path": "sources/lanis_ui_android/android/app/src/main/res/mipmap-anydpi/ic_launcher_coral.xml",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "48a12dfb1905de8ba4dd9724e7f383523770034a",
+    "upstreamPath": "android/app/src/main/res/mipmap-anydpi/ic_launcher_coral.xml",
+    "sha256": "cf3eaa1d8634a9255f251c5e850988333702fdeeb82eb9230ec35d133f00dd72",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/48a12dfb1905de8ba4dd9724e7f383523770034a/android/app/src/main/res/mipmap-anydpi/ic_launcher_coral.xml"
+  },
+  {
+    "path": "sources/lanis_ui_android/android/app/src/main/res/mipmap-anydpi/ic_launcher_cyan.xml",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "48a12dfb1905de8ba4dd9724e7f383523770034a",
+    "upstreamPath": "android/app/src/main/res/mipmap-anydpi/ic_launcher_cyan.xml",
+    "sha256": "7542c7013da3aacd058237c3b97d3dbd4a150739888a666cdc0c0606d909629c",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/48a12dfb1905de8ba4dd9724e7f383523770034a/android/app/src/main/res/mipmap-anydpi/ic_launcher_cyan.xml"
+  },
+  {
+    "path": "sources/lanis_ui_android/android/app/src/main/res/mipmap-anydpi/ic_launcher_emerald.xml",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "48a12dfb1905de8ba4dd9724e7f383523770034a",
+    "upstreamPath": "android/app/src/main/res/mipmap-anydpi/ic_launcher_emerald.xml",
+    "sha256": "1b6b3d8c6d23966cc4821a8d8c58d3baf1860c9494f05817d8e13fa029a3a02a",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/48a12dfb1905de8ba4dd9724e7f383523770034a/android/app/src/main/res/mipmap-anydpi/ic_launcher_emerald.xml"
+  },
+  {
+    "path": "sources/lanis_ui_android/android/app/src/main/res/mipmap-anydpi/ic_launcher_moss.xml",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "48a12dfb1905de8ba4dd9724e7f383523770034a",
+    "upstreamPath": "android/app/src/main/res/mipmap-anydpi/ic_launcher_moss.xml",
+    "sha256": "52936e1a3ae3ddec34f5134e71aaf91fe158884708facd874de88db4d4d28db7",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/48a12dfb1905de8ba4dd9724e7f383523770034a/android/app/src/main/res/mipmap-anydpi/ic_launcher_moss.xml"
+  },
+  {
+    "path": "sources/lanis_ui_android/android/app/src/main/res/mipmap-anydpi/ic_launcher_round.xml",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "48a12dfb1905de8ba4dd9724e7f383523770034a",
+    "upstreamPath": "android/app/src/main/res/mipmap-anydpi/ic_launcher_round.xml",
+    "sha256": "6f0598777367ca143e3498d13a28bc6119c4a989a6d402059adb9f5ff2bbaaed",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/48a12dfb1905de8ba4dd9724e7f383523770034a/android/app/src/main/res/mipmap-anydpi/ic_launcher_round.xml"
+  },
+  {
+    "path": "sources/lanis_ui_android/android/app/src/main/res/mipmap-anydpi/ic_launcher_ruby.xml",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "48a12dfb1905de8ba4dd9724e7f383523770034a",
+    "upstreamPath": "android/app/src/main/res/mipmap-anydpi/ic_launcher_ruby.xml",
+    "sha256": "577c04529a18aa34811094c875f7c01003fcafe8fe10de1a782c4de4d5a2cbef",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/48a12dfb1905de8ba4dd9724e7f383523770034a/android/app/src/main/res/mipmap-anydpi/ic_launcher_ruby.xml"
+  },
+  {
+    "path": "sources/lanis_ui_android/android/app/src/main/res/mipmap-anydpi/ic_launcher_sapphire.xml",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "48a12dfb1905de8ba4dd9724e7f383523770034a",
+    "upstreamPath": "android/app/src/main/res/mipmap-anydpi/ic_launcher_sapphire.xml",
+    "sha256": "f6a53f96b262d1f5cbe61f42e51f3d279b66fa3ba553c4a17956bdef3805ca4e",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/48a12dfb1905de8ba4dd9724e7f383523770034a/android/app/src/main/res/mipmap-anydpi/ic_launcher_sapphire.xml"
+  },
+  {
+    "path": "sources/lanis_ui_android/android/app/src/main/res/values/icon_colors.xml",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "48a12dfb1905de8ba4dd9724e7f383523770034a",
+    "upstreamPath": "android/app/src/main/res/values/icon_colors.xml",
+    "sha256": "d925e1c5ee07389fab8ac65b99f4c3c07a8bb15cd60e421b71c6143d615a6edb",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/48a12dfb1905de8ba4dd9724e7f383523770034a/android/app/src/main/res/values/icon_colors.xml"
+  },
+  {
+    "path": "sources/lanis_ui_android/scripts/generate-android-icons.mjs",
+    "repository": "https://github.com/joan-code6/lanis_ui",
+    "commit": "48a12dfb1905de8ba4dd9724e7f383523770034a",
+    "upstreamPath": "scripts/generate-android-icons.mjs",
+    "sha256": "fbfe24fa78eda837b3a123d5ce6c984edd8fddb73d051b1118342a8686274a4b",
+    "url": "https://github.com/joan-code6/lanis_ui/blob/48a12dfb1905de8ba4dd9724e7f383523770034a/scripts/generate-android-icons.mjs"
+  },
+  {
+    "path": "sources/lanis_admin/public/lanis-logo.png",
+    "repository": "https://github.com/joan-code6/lanis_admin",
+    "commit": "b36adfb2abf48f8e47fda84222613d776712ae50",
+    "upstreamPath": "public/lanis-logo.png",
+    "sha256": "56347c235cd04a76bec0247102ab422474944a4bd26b60829846e824831ab56e",
+    "url": "https://github.com/joan-code6/lanis_admin/blob/b36adfb2abf48f8e47fda84222613d776712ae50/public/lanis-logo.png"
   }
 ]

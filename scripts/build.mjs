@@ -1,102 +1,88 @@
-import { readFile, writeFile, mkdir, rm, readdir, stat, copyFile } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, rm, readdir, stat, mkdtemp, copyFile } from 'node:fs/promises';
+import { spawnSync } from 'node:child_process';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import sharp from 'sharp';
-import * as fontkit from 'fontkit';
 import { zipSync } from 'fflate';
-import { digest, rasterWidths, svgDocument } from './lib.mjs';
+import { digest, rasterWidths, extendExistingIconGenerator, verifyCopyExcerpt } from './lib.mjs';
 
-const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-process.chdir(root);
-const tokens = JSON.parse(await readFile('brand/tokens.json'));
-const copy = JSON.parse(await readFile('copy/library.json'));
-const originalSvg = await readFile('sources/upstream/opengraph.svg', 'utf8');
-const cap = [...originalSvg.matchAll(/<path d="([^"]+)"/g)].map(m => `<path d="${m[1]}"/>`).join('');
-if (!cap) throw new Error('Upstream SVG must contain cap paths');
-// TrueType source is necessary: fontkit cannot vary transformed WOFF2 outlines reliably.
-const font = fontkit.openSync('sources/fonts/outfit-variable.ttf').getVariation({ wght: 700 });
-function outline(text, x, baseline, size, fill) {
-  const run = font.layout(text); let cursor = 0;
-  return `<g fill="${fill}" transform="translate(${x} ${baseline}) scale(${size/font.unitsPerEm} ${-size/font.unitsPerEm})">${run.glyphs.map((glyph,i) => {
-    const pos=run.positions[i]; const result=`<path transform="translate(${cursor+pos.xOffset} ${pos.yOffset})" d="${glyph.path.toSVG()}"/>`; cursor+=pos.xAdvance; return result;
-  }).join('')}</g>`;
-}
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');process.chdir(root);
+const provenance=JSON.parse(await readFile('sources/provenance.json'));
+const byPath=new Map(provenance.map(s=>[s.path,s]));
+for(const source of provenance)if(digest(await readFile(source.path))!==source.sha256)throw new Error(`Source changed: ${source.path}`);
+const copy=JSON.parse(await readFile('copy/library.json'));
+for(const item of copy.items)verifyCopyExcerpt(item,await readFile(item.source.path,'utf8'));
+const ui='sources/lanis_ui';
+const {themes}=await import(pathToFileURL(path.resolve(`${ui}/scripts/icon-palettes.mjs`)).href);
+const css=await readFile(`${ui}/src/index.css`,'utf8');
+const defaults=css.match(/:root\s*\{([^}]+)\}/)?.[1];
+const colors=Object.fromEntries(Object.entries(themes).map(([name,t])=>[name,t.themeColor]));
+const tokens={name:'Lanis',sourceCommit:byPath.get(`${ui}/public/opengraph.svg`).commit,colors,themes:colors,typography:{body:'Outfit',utility:'JetBrains Mono'},sources:{colors:`${ui}/scripts/icon-palettes.mjs`,typography:`${ui}/tailwind.config.js`},defaultCssVariables:defaults.trim(),policy:'Extracted existing product values. No new palettes or brand rules.'};
+await writeFile('brand/tokens.json',JSON.stringify(tokens,null,2)+'\n');
+await writeFile('brand/tokens.css',`/* Existing UI defaults; source: ${ui}/src/index.css */\n:root {\n${defaults.trim()}\n}\n`);
+await rm('assets',{recursive:true,force:true});await rm('downloads',{recursive:true,force:true});await rm('copy/de',{recursive:true,force:true});
 const records=[];
-async function save(file, data, meta) {
-  await mkdir(path.dirname(file),{recursive:true}); await writeFile(file,data);
-  records.push({path:file,bytes:Buffer.byteLength(data),sha256:digest(data),...meta});
+async function save(file,data,meta){await mkdir(path.dirname(file),{recursive:true});await writeFile(file,data);records.push({path:file,bytes:data.length,sha256:digest(data),...meta});}
+async function original(source,destination,meta){
+ const data=await readFile(source);const format=path.extname(source).slice(1);const dimensions=['png','webp','svg'].includes(format)?await sharp(data).metadata():{};
+ await save(destination,data,{...meta,format,width:dimensions.width,height:dimensions.height,quality:'original',status:meta.status||'original',source,sourceUrl:byPath.get(source).url,transformation:{type:'exact-copy'}});
 }
-for(const dir of ['assets/logos','assets/app-icons','assets/screenshots','downloads','copy/de','copy/en']) await rm(dir,{recursive:true,force:true});
-for(const kind of ['mark','lockup']) {
-  const variants=kind==='mark'?{...tokens.themes,ink:tokens.colors.ink,white:'#ffffff',black:'#000000'}:{ruby:tokens.colors.ruby,ink:tokens.colors.ink,white:'#ffffff',black:'#000000'};
-  for(const [variant,color] of Object.entries(variants)) {
-    const width=kind==='mark'?1000:1400; const height=kind==='mark'?1000:400;
-    const content=kind==='mark'?`<g fill="${color}">${cap}</g>`:`<rect x="0" y="40" width="320" height="320" rx="76" fill="${color}"/><g transform="translate(0 40) scale(.32)" fill="${variant==='white'?tokens.colors.ink:tokens.colors.rubyInk}">${cap}</g>${outline('Lanis',390,306,320,variant==='ruby'?tokens.colors.ink:color)}`;
-    const svg=svgDocument(width,height,`Lanis ${kind} · ${variant}`,content);
-    const base=`assets/logos`; const stem=`lanis-${kind}-${variant}`;
-    const meta={id:stem,name:`${kind==='mark'?'Flat cap':'Horizontal lockup'} · ${variant}`,category:'logos',variant,kind,alt:`Lanis ${variant} ${kind}`,status:kind==='lockup'?'proposed':'source-derived',source:'sources/upstream/opengraph.svg'};
-    await save(`${base}/svg/${stem}.svg`,svg,{...meta,format:'svg',width,height,quality:'vector'});
-    for(const size of tokens.sizes[kind]) {
-      const h=Math.round(size*height/width);
-      for(const format of ['png','webp']) {
-        const pipe=sharp(Buffer.from(svg),{density:Math.max(72,size/width*72)}).resize(size,h);
-        const data=await (format==='png'?pipe.png({compressionLevel:9}):pipe.webp({lossless:true})).toBuffer();
-        await save(`${base}/${format}/${stem}-${size}.${format}`,data,{...meta,format,width:size,height:h,quality:'lossless'});
-      }
-    }
+// Preserve every existing favicon size, PWA manifest and default alias byte-for-byte.
+for(const source of provenance.filter(s=>s.path.startsWith(`${ui}/public/favicon/`))){
+ const tail=source.upstreamPath.slice('public/favicon/'.length);const variant=tail.startsWith('themes/')?tail.split('/')[1]:'default';
+ const isIco=tail.endsWith('.ico');
+ await original(source.path,`assets/app-icons/original/${tail}`,{id:isIco?'favicon':`app-icon-${variant}`,name:isIco?'Existing browser favicon':`Existing app icon · ${variant}`,category:'app-icons',variant,alt:`Existing Lanis ${variant} app icon`});
+}
+await original(`${ui}/public/icon.webp`,'assets/app-icons/original/icon.webp',{id:'app-icon-default',name:'Existing app icon · default',category:'app-icons',variant:'default',alt:'Existing Lanis default app icon'});
+// Run the actual upstream generator with extra size entries, in an isolated temporary directory.
+const workspace=await mkdtemp(path.join(root,'.icon-export-'));
+try{
+ for(const file of ['icon-source.png','icon-source-cyan.png']){await mkdir(`${workspace}/scripts/assets`,{recursive:true});await copyFile(`${ui}/scripts/assets/${file}`,`${workspace}/scripts/assets/${file}`);}
+ await copyFile(`${ui}/scripts/icon-palettes.mjs`,`${workspace}/scripts/icon-palettes.mjs`);
+ const script=`${ui}/scripts/generate-themed-icons.mjs`;
+ await writeFile(`${workspace}/scripts/generate-themed-icons.mjs`,extendExistingIconGenerator(await readFile(script,'utf8')));
+ await mkdir(`${workspace}/public/favicon`,{recursive:true});
+ const run=spawnSync(process.execPath,[`${workspace}/scripts/generate-themed-icons.mjs`],{cwd:workspace,encoding:'utf8'});if(run.status!==0)throw new Error(run.stderr||'Upstream icon generator failed');
+ for(const variant of Object.keys(themes)){
+  // Existing resolutions must still match the committed upstream artwork pixel-for-pixel.
+  for(const file of ['favicon-16x16.png','favicon-32x32.png','apple-touch-icon.png','android-chrome-192x192.png','android-chrome-512x512.png']){
+   const upstream=`${ui}/public/favicon/themes/${variant}/${file}`;
+   const generated=await sharp(`${workspace}/public/favicon/themes/${variant}/${file}`).raw().toBuffer();
+   if(!generated.equals(await sharp(upstream).raw().toBuffer()))throw new Error(`Generator no longer matches existing ${variant}/${file}`);
   }
-}
-for(const variant of Object.keys(tokens.themes)) {
- const source=variant==='ruby'?'sources/upstream/android-chrome-512x512.png':`sources/upstream/app-icon-${variant}-512.png`;
- const stem=variant==='ruby'?'lanis-app-icon':`lanis-app-icon-${variant}`;
- for(const size of tokens.sizes.appIcon) {
-  for(const format of ['png','webp']) {
-    const pipe=sharp(source).resize(size,size,{withoutEnlargement:true});
-    const data=await (format==='png'?pipe.png({compressionLevel:9}):pipe.webp({lossless:true})).toBuffer();
-    await save(`assets/app-icons/${stem}-${size}.${format}`,data,{id:stem,name:`Original shaded app icon · ${variant}`,category:'app-icons',kind:'app-icon',variant,format,width:size,height:size,quality:'lossless',status:'source',source,alt:`Lanis ${variant} app icon with shaded graduation cap`});
+  const artwork=`${ui}/public/favicon/themes/${variant}/android-chrome-512x512.png`;
+  for(const size of [24,48,64,128,256]){
+   const data=await readFile(`${workspace}/public/favicon/themes/${variant}/icon-${size}.png`);
+   await save(`assets/app-icons/additional/${variant}/icon-${size}.png`,data,{id:`app-icon-${variant}`,name:`Existing app icon · ${variant}`,category:'app-icons',variant,format:'png',width:size,height:size,quality:'lossless',status:'existing-script-size-export',source:artwork,sourceUrl:byPath.get(artwork).url,alt:`Existing Lanis ${variant} app icon`,transformation:{type:'upstream-script',script,adapter:'scripts/lib.mjs#extendExistingIconGenerator',size,inputs:[`${ui}/scripts/icon-palettes.mjs`,`${ui}/scripts/assets/icon-source.png`,`${ui}/scripts/assets/icon-source-cyan.png`]}});
   }
  }
+}finally{await rm(workspace,{recursive:true,force:true});}
+// Original social artwork is kept whole; no extracted caps, new lockups or new layouts.
+for(const format of ['svg','png'])await original(`${ui}/public/opengraph.${format}`,`assets/social/opengraph.${format}`,{id:'opengraph',name:'Existing social preview',category:'social',alt:'Existing Lanis Open Graph artwork'});
+await original('sources/lanis_admin/public/lanis-logo.png','assets/admin/lanis-logo.png',{id:'admin-logo',name:'Existing admin portal logo',category:'admin',alt:'Existing Lanis admin portal logo'});
+for(const source of provenance.filter(s=>s.path.startsWith('sources/lanis_ui_android/android/'))){
+ const filename=path.basename(source.path);const theme=filename.match(/^ic_lanis_(\w+)\.png$/)?.[1];
+ await original(source.path,`assets/android/${source.upstreamPath.slice('android/app/src/main/res/'.length)}`,{id:theme?`android-${theme}`:'android-resources',name:theme?`Existing Android launcher · ${theme}`:'Existing Android vector and adaptive resources',category:'android',variant:theme,alt:theme?`Existing Lanis Android ${theme} launcher icon`:'Existing Android resource'});
 }
-await save('assets/app-icons/favicon.ico',await readFile('sources/upstream/favicon.ico'),{id:'favicon',name:'Browser favicon',category:'app-icons',format:'ico',quality:'original',status:'source',source:'sources/upstream/favicon.ico',alt:'Lanis browser favicon'});
-for(const name of ['lanis-dashboard','themes']) {
-  const src=`sources/upstream/${name}.png`; const m=await sharp(src).metadata();
-  for(const width of rasterWidths(m.width)) {
-    const height=Math.round(m.height*width/m.width);
-    const common={id:`screenshot-${name}`,name:`${name.replaceAll('-',' ')} · historical`,category:'screenshots',kind:'screenshot',status:'historical',source:src,width,height,alt:`Historical Lanis landing image: ${name.replaceAll('-',' ')}`};
-    await save(`assets/screenshots/${name}-${width}.png`,await sharp(src).resize(width).png({compressionLevel:9}).toBuffer(),{...common,format:'png',quality:'lossless'});
-    for(const format of ['webp','jpeg']) for(const [preset,quality] of Object.entries(tokens.quality[format])) {
-      let pipe=sharp(src).resize(width);
-      const data=await (format==='webp'?pipe.webp({quality}):pipe.flatten({background:tokens.colors.paper}).jpeg({quality,mozjpeg:true})).toBuffer();
-      await save(`assets/screenshots/${name}-${width}-${preset}.${format==='jpeg'?'jpg':format}`,data,{...common,format,quality:preset});
-    }
-  }
+// Resize/encode existing raster artwork only. No new geometry, colours or text.
+for(const [name,category] of [['lanis-dashboard','screenshots'],['themes','screenshots'],['opengraph','social']]){
+ const src=`${ui}/public/${category==='screenshots'?'landing/':''}${name}.png`;const metadata=await sharp(src).metadata();
+ if(category==='screenshots')await original(src,`assets/screenshots/${name}-original.png`,{id:`screenshot-${name}`,name:`${name} · historical`,category,alt:`Existing historical ${name} screenshot`,status:'historical-original'});
+ for(const width of rasterWidths(metadata.width))for(const format of ['webp','jpeg'])for(const [qualityName,quality] of [['web',80],['high',95]]){
+  const pipe=sharp(src).resize(width,null,{withoutEnlargement:true});const data=await (format==='webp'?pipe.webp({quality}):pipe.jpeg({quality,mozjpeg:true})).toBuffer();
+  await save(`assets/${category}/${name}-${width}-${qualityName}.${format==='jpeg'?'jpg':format}`,data,{id:category==='social'?'opengraph':`screenshot-${name}`,name:category==='social'?'Existing social preview':`${name} · historical`,category,format,width,height:Math.round(metadata.height*width/metadata.width),quality:qualityName,status:'existing-image-export',source:src,sourceUrl:byPath.get(src).url,alt:`Existing Lanis ${name} artwork`,transformation:{type:'resize-encode',width,quality,format}});
+ }
 }
-// Rendering HTML templates is a separate, explicit browser step. Index committed screenshots if present.
-try {
-  for(const file of (await readdir('assets/templates')).filter(f=>f.endsWith('.png')).sort()) {
-    const p=`assets/templates/${file}`; const data=await readFile(p); const m=await sharp(data).metadata();
-    records.push({path:p,bytes:data.length,sha256:digest(data),id:`template-${file.slice(0,-4)}`,name:`${file.slice(0,-4).replaceAll('-',' ')} · draft`,category:'templates',format:'png',quality:'lossless',width:m.width,height:m.height,status:'draft',source:`templates/${file.slice(0,-4)}.html`,alt:`Lanis ${file.slice(0,-4).replaceAll('-',' ')} marketing layout`});
-  }
-} catch(e) { if(e.code!=='ENOENT') throw e; }
-for(const locale of copy.locales) for(const category of [...new Set(copy.items.map(i=>i.category))]) {
-  const slug=category.toLowerCase().replaceAll(' ','-');
-  await mkdir(`copy/${locale}`,{recursive:true});
-  await writeFile(`copy/${locale}/${slug}.md`,`# ${category} · ${locale}\n\n${copy.items.filter(i=>i.category===category).map(i=>`## ${i.id}\n\nStatus: ${i.status}${i.reviewNote?` — ${i.reviewNote}`:''}\n\n${i.text[locale]}\n`).join('\n')}`);
+for(const category of [...new Set(copy.items.map(i=>i.category))]){
+ const file=`copy/de/${category.toLowerCase().replaceAll(' ','-')}.md`;await mkdir('copy/de',{recursive:true});
+ await writeFile(file,`# ${category} · de\n\nVerbatim source excerpts. Existing claims are preserved, not revalidated.\n\n${copy.items.filter(i=>i.category===category).map(i=>`## ${i.id}\n\n${i.text.de}\n\nSource: [${i.source.upstreamPath}:${i.source.line}](${i.source.url}) · ${i.status}\n`).join('\n')}`);
 }
-await writeFile('brand/tokens.css',`:root {\n${Object.entries(tokens.colors).map(([key,value])=>`  --lanis-${key.replace(/[A-Z]/g,c=>'-'+c.toLowerCase())}: ${value};`).join('\n')}\n  --lanis-font-body: 'Outfit', system-ui, sans-serif;\n  --lanis-font-display: 'Syne', sans-serif;\n  --lanis-font-utility: 'JetBrains Mono', monospace;\n}\n`);
-records.sort((a,b)=>a.path.localeCompare(b.path,'en'));
-const manifest={schemaVersion:1,sourceCommit:tokens.sourceCommit,assets:records};
-await writeFile('assets/manifest.json',JSON.stringify(manifest,null,2)+'\n');
-await writeFile('catalog/data.js',`// Generated by npm run build. Supports file:// without fetch.\nwindow.LANIS_BRAND = ${JSON.stringify({tokens,copy,assets:records})};\n`);
-async function files(dir) {
-  const out=[]; for(const f of (await readdir(dir)).sort()) {const p=`${dir}/${f}`; if((await stat(p)).isDirectory())out.push(...await files(p));else out.push(p);} return out;
-}
-async function bundle(name, paths) {
-  const entries={}; for(const p of [...new Set(paths)].sort()) entries[p]=[new Uint8Array(await readFile(p)),{mtime:new Date(2026, 0, 1, 0, 0, 0)}];
-  await mkdir('downloads',{recursive:true}); await writeFile(`downloads/${name}.zip`,zipSync(entries,{level:6}));
-}
+records.sort((a,b)=>a.path.localeCompare(b.path,'en'));await writeFile('assets/manifest.json',JSON.stringify({schemaVersion:2,sourceCommit:tokens.sourceCommit,policy:'Existing assets only; permitted transformations are documented per file.',assets:records},null,2)+'\n');
+await writeFile('catalog/data.js',`// Generated index of existing source material. No fetch required.\nwindow.LANIS_BRAND = ${JSON.stringify({tokens,copy,assets:records})};\n`);
+async function files(dir){const out=[];for(const f of(await readdir(dir)).sort()){const p=`${dir}/${f}`;if((await stat(p)).isDirectory())out.push(...await files(p));else out.push(p);}return out;}
+async function bundle(name,paths){const entries={};for(const p of[...new Set(paths)].sort())entries[p]=[new Uint8Array(await readFile(p)),{mtime:new Date(2026,0,1)}];await mkdir('downloads',{recursive:true});await writeFile(`downloads/${name}.zip`,zipSync(entries,{level:6}));}
 const common=['README.md','docs/BRAND.md','docs/RIGHTS.md','sources/provenance.json'];
-await bundle('lanis-logos',[...common,...records.filter(a=>a.category==='logos'||a.category==='app-icons').map(a=>a.path)]);
+await bundle('lanis-icons',[...common,...records.filter(a=>['app-icons','android','admin'].includes(a.category)).map(a=>a.path)]);
 await bundle('lanis-copy',[...common,...await files('copy')]);
-await bundle('lanis-brand-kit',[...common,'docs/MAINTAINING.md','assets/manifest.json',...records.map(a=>a.path),...await files('copy'),...await files('brand'),'index.html','package.json','package-lock.json',...await files('catalog'),...await files('sources'),...await files('docs'),...await files('scripts'),...await files('templates')]);
-console.log(`Exported ${records.length} indexed assets and ${copy.items.length} copy entries in ${copy.locales.length} languages.`);
+await bundle('lanis-brand-kit',[...common,...await files('assets'),...await files('copy'),...await files('brand'),'index.html','package.json','package-lock.json',...await files('catalog'),...await files('sources'),...await files('docs'),...await files('scripts')]);
+console.log(`Collected ${records.length} existing assets and documented exports, ${copy.items.length} verbatim text excerpts.`);

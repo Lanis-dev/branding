@@ -1,7 +1,7 @@
-# Branding workspace
+# Existing branding collection
 
-Work in this repository for brand assets and copy. Fetch origin before new work and use a task branch in a separate worktree. Keep source assets and provenance together.
+This repository collects existing LANIS branding. Do not create brand assets, standalone extracted marks, lockups, layout templates, marketing copy, translations or new brand usage rules. Every collected asset must have immutable upstream provenance; every text excerpt must match its source exactly.
 
-Image generation is prohibited on this machine and for every agent. Never call image-generation tools, models, APIs, services, CLIs or scripts, or delegate image generation anywhere. For layouts, write HTML/CSS and capture the rendered code. Resize and convert existing assets without inventing imagery.
+Image generation is prohibited for every agent on this machine. Never use image-generation tools, models, APIs, services, CLIs or scripts, and never delegate image generation. The owner explicitly allows running or modifying existing project asset scripts to export the existing artwork's variants. This exception allows size exports from the existing generator; it does not authorize new artwork or compositions.
 
-Use `npm ci`, `npm run build`, `npm run check`, and `npm test`. Read `docs/MAINTAINING.md` before modifying the pipeline. Treat imported product screenshots as historical references; do not imply they show the latest UI. Do not add real account data or credentials. Do not introduce unsupported claims in copy. Refer to the backend as lanis_api.
+Read docs/MAINTAINING.md. Fetch origin and use a separate task worktree. Do not modify another checkout's changes or production. Run npm ci, npm run build, npm run check and npm test; run npm run test:browser for catalog changes. Preserve source hashes and font licences. Refer to the backend as lanis_api.

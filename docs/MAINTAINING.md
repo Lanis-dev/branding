@@ -1,30 +1,31 @@
-# Maintaining the library
+# Maintaining the collection
 
-## Setup and everyday use
+## Scope
 
-Use Node 22 or newer. Run `npm ci`, then `npm run build`. Open `index.html` directly for the offline catalog, or use `npm run serve` for localhost-only access. The catalog has no remote fonts, analytics, or CDN dependencies. Build outputs are committed so downloads work immediately after cloning.
+Collect existing material. Do not design new brand assets, extract symbols into new logos, invent monochrome variants, compose lockups, create campaign layouts, rewrite product copy or add translations. Missing source material stays missing until the owner supplies it or points to an existing source.
 
-`npm run build` reads the imported sources, tokens and copy, then replaces the generated logo, app-icon and screenshot folders in `assets/`, plus `downloads/` and `copy/de/` / `copy/en/`. Existing `assets/templates/` screenshots are retained and indexed. It writes `catalog/data.js`, `assets/manifest.json` and token CSS. Do not hand-edit these generated outputs. It does not contact the source repository or render new imagery.
+Image-generation tools and services remain prohibited. The owner explicitly permits running or extending existing asset scripts to export variants of the existing artwork. Resizing and encoding existing raster artwork is also allowed.
 
-## Changing assets
+## Sources
 
-1. Obtain an existing source asset from the owner or the UI repository. Inspect screenshots for personal information before importing.
-2. Save immutable inputs in `sources/`; record repository, exact commit, upstream path and SHA-256 in `sources/provenance.json`. Do not rely on a floating branch as provenance.
-3. Adjust token values or export presets in `scripts/build.mjs`. Preserve original app icons, keep JPEG backgrounds explicit, and never upscale screenshots or raster source icons.
-4. Run the build, check and tests. Review a rendered catalog at desktop and mobile sizes. Commit sources and all affected outputs together.
+Keep immutable source snapshots under `sources/`. Each source must have its repository, commit, upstream path and SHA-256 in `sources/provenance.json`. Import from committed upstream versions, not another checkout's uncommitted work. Source checkouts and production are never modified by this build.
 
-The primary upstream is `joan-code6/lanis_ui`; the org branding repo is `Lanis-dev/branding`. Sources are pinned to the commit recorded in `brand/tokens.json`. The imported screenshots are historical landing assets and are visibly labelled as such. Fresh product screenshots should replace these only after account data is removed.
+The collection includes `lanis_ui` main, its separate Android branch, and `lanis_admin` main. Pin each independently. Preserve original font licences and source scripts. Review images for personal data before adding them. Refer to the backend as lanis_api.
 
-## Copy
+## Build
 
-Edit `copy/library.json`, keeping stable IDs. German is primary. New wording and translations remain drafts until the owner reviews them; set status to `approved` only after that review. Record evidence for factual changes in the review note. The build writes one Markdown file per category and language for quick reuse. Avoid live numbers and platform claims in evergreen assets.
+Run `npm ci` and `npm run build`. The build verifies source hashes and copy excerpts first, replaces generated `assets/`, downloads and Markdown excerpts, and refreshes the catalog index and extracted tokens. Do not hand-edit generated outputs.
 
-## HTML marketing templates
+Original assets are copied unchanged. For additional icon sizes, the build runs the original `generate-themed-icons.mjs` in a disposable directory inside this repository. `extendExistingIconGenerator` in `scripts/lib.mjs` adds five resolution entries and removes the unused legacy `to-ico` import/export. It does not change the palette, algorithm, source artwork or theme list. The adapter fails when its expected source structure changes. Before accepting any extra size, the build compares every existing theme/size output against the original committed pixels.
 
-`templates/` contains real HTML/CSS layouts with existing brand assets. Edit the code and render it with `npm run render:templates`. This requires a local Chromium installation; set `CHROME_PATH` if it is not at `/usr/bin/chromium`. PNG screenshots are written to `assets/templates/`. No image-generation service is used. Run `npm run build` afterward to index them and rebuild bundles.
+The temporary output is removed afterward. Existing SVG artwork is copied without editing. Image size/quality exports only resize and encode existing raster images. No icon is enlarged above 512 px. ZIP timestamps are fixed for reproducibility.
 
-`npm run test:browser` checks the offline catalog in Chromium, including mobile overflow, image loads, filter results, download selection and clipboard actions. It saves local review screenshots in the ignored `verification/` folder.
+## Text
 
-## Automation
+Every excerpt must exactly equal the indexed slice of its source file. Keep its source path, offsets, line and immutable URL. The build and checks reject altered text, made-up entries, translations and missing provenance. To update text, import the new committed source and update the excerpt coordinates. Preserve historical claims as source material; do not silently edit them.
 
-CI installs locked dependencies, runs the build, checks every manifest entry and checksum, runs the test suite, and fails if regenerated tracked files differ. Output archives use fixed timestamps and sorted entries for reproducibility. Template rendering is explicit, since browser/font rendering may differ across platforms. Local build and validation do not require credentials or LANIS API access.
+## Verification
+
+Run `npm run check`, `npm test` and `npm run test:browser`. Chromium is required only for the browser check; set `CHROME_PATH` if needed. The catalog works from `index.html` directly, or `npm run serve` binds to localhost. Browser verification checks downloads, exact source links, filters, clipboard and mobile layouts. `verification/` screenshots are ignored review artifacts, not branding exports.
+
+CI rebuilds and validates the committed collection. Keep generated outputs and source changes in the same commit. Old invented assets and bundles must be removed when correcting the collection; checking only manifest entries is insufficient, so validation also checks the complete asset tree and archive contents.
