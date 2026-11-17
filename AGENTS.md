@@ -1,6 +1,6 @@
 # Branding library
 
-This is a manually maintained collection of existing LANIS branding. Do not invent assets or copy, create campaign layouts or translations, or add brand rules. Organise by content and use, not by source repository or application. Keep one canonical copy of each asset. Do not add upstream snapshots, provenance links to every item, copying/sync pipelines, redundant archives or GitHub Actions workflows.
+This is a manually maintained collection of existing LANIS branding. Do not invent assets or copy, create campaign layouts or translations, or add brand rules. Organise by content and use, not by source repository or application. Keep one canonical copy of each asset. Do not add upstream snapshots, provenance links to every item, copying/sync pipelines, redundant archives or unrelated GitHub Actions workflows. The owner explicitly requested a Cloudflare Workers deployment workflow for the catalog.
 
 Copy existing material into the appropriate folder and update catalog/assets.js, copy/marketing.js or brand/colours.js by hand. Existing project asset scripts may be used when requested to export sizes or variants of the existing artwork. Do not change its geometry, palettes or typography to create a new identity.
 

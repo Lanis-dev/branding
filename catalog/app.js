@@ -25,11 +25,12 @@ function renderAssets() {
   $('asset-count').textContent=`${filtered.length} asset families · ${filtered.reduce((n,g)=>n+g.length,0)} ready-to-use files`;
   for(const group of filtered) {
     const base=group[0]; const card=element('article','asset-card'); const preview=element('div','asset-preview');
-    const preferred=group.find(a=>a.quality==='original'&&a.width===512&&a.format==='png')||group.find(a=>a.quality==='original'&&a.format==='png')||group.find(a=>a.width===256&&a.format==='png')||group.find(a=>a.width===480&&a.format==='webp')||group[0];
+    const preferred=group.find(a=>a.quality==='original'&&a.width===512&&a.format==='png')||group.find(a=>a.quality==='original'&&a.format==='png')||group.find(a=>a.width===256&&a.format==='png')||group.find(a=>a.width===480&&a.format==='webp')||group.find(a=>a.format==='svg')||group[0];
+    if(preferred.variant==='white')preview.classList.add('dark');
     const img=element('img',base.category==='icons'?'icon':base.category==='screenshots'?'screenshot':''); img.src=preferred.path;if(base.format==='ico'){img.style.width='32px';img.style.height='32px';}img.alt=base.alt; img.loading='lazy';if(['png','webp','jpeg','jpg','svg','ico'].includes(preferred.format))preview.append(img);else preview.append(element('span','resource-preview',`${preferred.format.toUpperCase()} resources`));
     const body=element('div','asset-card-body');body.append(element('h3','',base.name),element('p','',`${group.length} ${group.length===1?'file':'sizes & formats'}`));
     const select=element('select'); select.setAttribute('aria-label',`Format and size for ${base.name}`);
-    for(const a of group) { const option=element('option','',`${a.format.toUpperCase()} · ${a.format==='svg'?'scalable':a.width?`${a.width} × ${a.height}`:'multi-size'} · ${a.quality}`);option.value=a.path;option.selected=a===preferred;select.append(option); }
+    for(const a of group) { const option=element('option','',`${a.format.toUpperCase()} · ${a.format==='svg'?'scalable':a.width?`${a.width} × ${a.height}`:'multi-size'} · ${a.quality}${a.background?` · ${a.background} background`:""}`);option.value=a.path;option.selected=a===preferred;select.append(option); }
     const link=element('a','asset-download'); link.download=''; const label=element('span');link.append(label,element('span','','↓'));
     const update=()=>{const a=group.find(a=>a.path===select.value);link.href=a.path;label.textContent=`Download ${a.format.toUpperCase()} · ${a.bytes<1024?`${a.bytes} B`:`${Math.round(a.bytes/1024)} KB`}`;};
     select.addEventListener('change',update);update();body.append(select,link);card.append(preview,body);$('assets').append(card);
